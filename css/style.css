@@ -198,8 +198,8 @@ h1,
     font-size: 12px;
 }
 
-.fs-13 {
-    font-size: 13px;
+.fs-14 {
+    font-size: 14px;
 }
 
 .fs-16 {
@@ -240,8 +240,8 @@ h1,
         font-size: 12px;
     }
     
-    .fs-lg-13 {
-        font-size: 13px;
+    .fs-lg-14 {
+        font-size: 14px;
     }
     
     .fs-lg-16 {
@@ -312,30 +312,31 @@ textarea {
 }
 
 .form-control,
-.form-select {
-    font-size: 1.125rem;
-    border-radius: 0;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
+.form-select {}
 
-.form-control:focus,
-.form-select:focus {
-    box-shadow: none;
-}
-
-.form-check-input {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-top: 0.25rem;
-}
+.form-check-input {}
 
 .form-check-input[type=checkbox],
-.form-check-input:checked {
-    border-radius: 0;
-}
+.form-check-input:checked {}
 
+.form-control:focus,
+.form-select:focus,
 .form-check-input:focus {
     box-shadow: none;
+}
+
+.subscription-form .form-control {
+    height: 64px;
+    border: 2px solid #FBE121;
+}
+
+.subscription-form .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    height: 64px;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -388,7 +389,7 @@ textarea {
 }
 
 .btn-wishlist {
-    --btn-icon-size: 2rem;
+    --btn-icon-size: 1.375rem;
 }
 
 .btn-lg,
@@ -476,21 +477,21 @@ img {
     --bs-dropdown-padding-x: 0;
     --bs-dropdown-padding-y: 0.5rem;
     --bs-dropdown-spacer: 0.25rem;
-    --bs-dropdown-font-size: 1rem;
-    --bs-dropdown-color: #000;
-    --bs-dropdown-bg: #fff;
-    --bs-dropdown-border-color: #fff;
-    --bs-dropdown-border-radius: 0.375rem;
+    --bs-dropdown-font-size: 0.875rem;
+    --bs-dropdown-color: #212121;
+    --bs-dropdown-bg: #f6f6f6;
+    --bs-dropdown-border-color: #f6f6f6;
+    --bs-dropdown-border-radius: 0.5rem;
     --bs-dropdown-border-width: 1px;
-    --bs-dropdown-inner-border-radius: calc(0.375rem - 1px);
+    --bs-dropdown-inner-border-radius: calc(0.5rem - 1px);
     --bs-dropdown-divider-bg: #e2e5f1;
     --bs-dropdown-divider-margin-y: 0.375rem;
     --bs-dropdown-box-shadow: 0 0.275rem 1.25rem rgba(11, 15, 25, 0.05), 0 0.25rem 0.5625rem rgba(11, 15, 25, 0.03);
-    --bs-dropdown-link-color: #000;
-    --bs-dropdown-link-hover-color: #ccc;
-    --bs-dropdown-link-hover-bg: #fff;
-    --bs-dropdown-link-active-color: #fff;
-    --bs-dropdown-link-active-bg: #000;
+    --bs-dropdown-link-color: #212121;
+    --bs-dropdown-link-hover-color: #685BC6;
+    --bs-dropdown-link-hover-bg: #f6f6f6;
+    --bs-dropdown-link-active-color: #685BC6;
+    --bs-dropdown-link-active-bg: #f6f6f6;
     --bs-dropdown-link-disabled-color: #adb5bd;
     --bs-dropdown-item-padding-x: 1rem;
     --bs-dropdown-item-padding-y: 0.25rem;
@@ -545,14 +546,14 @@ img {
     --bs-navbar-padding-x: 0;
     --bs-navbar-padding-y: 1rem;
     --bs-navbar-color: #212121;
-    --bs-navbar-hover-color: #000000;
+    --bs-navbar-hover-color: #685BC6;
     --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
-    --bs-navbar-active-color: #212121;
+    --bs-navbar-active-color: #685BC6;
     --bs-navbar-brand-padding-y: 0.3125rem;
     --bs-navbar-brand-margin-end: 1rem;
     --bs-navbar-brand-font-size: 1.25rem;
     --bs-navbar-brand-color: #212121;
-    --bs-navbar-brand-hover-color: #000000;
+    --bs-navbar-brand-hover-color: #685BC6;
     --bs-navbar-nav-link-padding-x: 1rem;
     --bs-navbar-toggler-padding-y: 0.25rem;
     --bs-navbar-toggler-padding-x: 0.25rem;
@@ -569,6 +570,11 @@ img {
     --bs-nav-link-padding-y: 0.5rem;
     --bs-nav-link-font-size: 1.25rem;
     --bs-nav-link-font-weight: 400;
+}
+
+.navbar-nav .dropdown-item,
+.navbar-nav .nav-link {
+    text-transform: uppercase;
 }
 
 .navbar-nav .dropdown-menu {
@@ -634,6 +640,8 @@ img {
 [ FOOTER ]*/
 
 .footer {
+    --bs-link-color: #212121;
+    --bs-link-hover-color: #685BC6;
 	padding: 0;
 }
 
