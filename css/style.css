@@ -377,6 +377,23 @@ textarea {
     --bs-btn-disabled-border-color: #F1D400;
 }
 
+.btn-black {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #212121;
+    --bs-btn-border-color: #212121;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #505050;
+    --bs-btn-hover-border-color: #505050;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #505050;
+    --bs-btn-active-border-color: #505050;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212121;
+    --bs-btn-disabled-border-color: #212121;
+}
+
 .btn-icon {
     --btn-icon-size: 3rem;
     display: inline-flex;

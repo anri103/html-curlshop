@@ -151,21 +151,53 @@
         <main class="main page-main">
 
             <!-- Главный Слайдер -->
-            <section class="section d-flex align-items-center" style="position: relative; height: calc(100vh - 220px); min-height: 500px; padding-bottom: 10rem;">
-                <img src="img/hero-01.png" alt="default alt" style="position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%;">
-                <div class="container">
-                    <div class="position-relative d-flex flex-column align-items-start" style="max-width: 700px;">
-                        <div>
-                            <p class="h1">Кудрявая косметика для мужчин</p>
-                            <p>Новая линейка косметики для кудрявых мужчин</p>
+            <style>
+                .heroSwiper .swiper-pagination {
+                    bottom: 8rem;
+                }
+            </style>
+            <section class="section d-flex align-items-center" style="position: relative; height: calc(100vh - 220px); min-height: 500px;">
+                <div class="swiper heroSwiper h-100">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide h-auto">
+                            <div class="position-relative d-flex align-items-center h-100">
+                                <img src="img/hero-01.png" alt="default alt" style="position: absolute; top: 0; width: 100%; height: 100%; object-fit: cover;">
+                                <div class="container">
+                                    <div class="position-relative d-flex flex-column align-items-start" style="max-width: 700px;">
+                                        <div>
+                                            <p class="h1">Кудрявая косметика для мужчин</p>
+                                            <p>Новая линейка косметики для кудрявых мужчин</p>
+                                        </div>
+                                        <a class="btn btn-black" href="#">Перейти к косметике</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <a class="btn btn-black" href="#">Перейти к косметике</a>
+
+                        <div class="swiper-slide h-auto">
+                            <div class="position-relative d-flex align-items-center h-100">
+                                <img src="img/hero-01.png" alt="default alt" style="position: absolute; top: 0; width: 100%; height: 100%; object-fit: cover;">
+                                <div class="container position-relative">
+                                    <div class="position-relative d-flex flex-column align-items-start" style="max-width: 700px;">
+                                        <div>
+                                            <p class="h1">Кудрявая косметика для мужчин</p>
+                                            <p>Новая линейка косметики для кудрявых мужчин</p>
+                                        </div>
+                                        <a class="btn btn-black" href="#">Перейти к косметике</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
+
             </section>
 
             <!-- Наплывающая секция -->
-            <section class="section-marquee section py-5" style="position: relative; margin-top: -10rem;">
+            <section class="section-marquee section py-5" style="position: relative; margin-top: -10rem; z-index: 1;">
                 <div class="container">
                     <div class="bg-white rounded-3 shadow-lg p-3 p-lg-5">
                         <div class="row align-items-center">
