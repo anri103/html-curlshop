@@ -371,6 +371,10 @@ textarea {
     border: 2px solid #FBE121;
 }
 
+.shop-filters .form-select {
+    cursor: pointer;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ BUTTONS ]*/
 
@@ -944,6 +948,11 @@ img {
     padding: 0;
 }
 
+.swiper {
+    --swiper-theme-color: #212121;
+    --swiper-pagination-bullet-size: 12px;
+}
+
 .heroSwiper {
     position: relative;
 }
@@ -1110,6 +1119,55 @@ img {
     margin-bottom: 1rem;
 }
 
+.shop-categories {
+    position: relative;
+    overflow: hidden;
+    touch-action: pan-y;
+}
+
+.shop-categories .categories-list {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;    
+}
+
+.shop-categories .categories-list::-webkit-scrollbar {
+    display: none;
+}
+
+.shop-categories .categories-list li {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.shop-categories .categories-list li + li {
+    margin-left: 6px;
+}
+
+.shop-categories .categories-list li a {
+    display: block;
+    color: #A2A2A2;
+    font-size: 14px;
+    padding: 10px 16px;
+    text-transform: none;
+    border: 1px solid #A2A2A2;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.shop-categories .categories-list li a.active {
+    color: #fff;
+    background-color: #212121;
+    text-decoration: none;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
 
@@ -1120,7 +1178,53 @@ img {
     }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .shop-categories {
+        position: relative;
+        overflow: hidden;
+        touch-action: pan-y;
+    }
+    
+    .shop-categories .categories-list {
+        position: relative;
+        display: block;
+        white-space: normal;
+        overflow-x: auto;
+        margin-right: -16px;
+        margin-left: -16px;
+    }
+    
+    .shop-categories .categories-list li {
+        position: relative;
+        display: inline-block;
+        flex-shrink: 0;
+    }
+    
+    .shop-categories .categories-list li + li {
+        margin-left: 0;
+    }
+    
+    .shop-categories .categories-list li a {
+        display: block;
+        color: #212121;
+        font-size: 18px;
+        padding: 10px 16px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    .shop-categories .categories-list li a:hover {
+        text-decoration: underline;
+    }
+    
+    .shop-categories .categories-list li a.active {
+        color: #212121;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+}
 
 @media (min-width: 992px) {
 
