@@ -3,9 +3,9 @@
 
 const heroSwiper = new Swiper('.heroSwiper', {
     loop: true,
-    // autoplay: {
-    //     delay: 3500,
-    // },
+    autoplay: {
+        delay: 3500,
+    },
     pagination: {
         clickable: true,
         el: '.swiper-pagination',
