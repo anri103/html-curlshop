@@ -1062,7 +1062,7 @@ img {
 
 .tooltip {
     --bs-tooltip-color: #212121;
-    --bs-tooltip-bg: #fff;
+    --bs-tooltip-bg: #f6f6f6;
     display: none;
 }
 
