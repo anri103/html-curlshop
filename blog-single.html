@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>Index - Curl Shop</title>
+    <title>Blog-single - Curl Shop</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -15,8 +15,9 @@
 </head>
 
 <!-- ВНИМАТЕЛЬНО! класс "cms-index-index" задаёт прозрачное меню, без него меню будет обычным, этот класс на некоторых страницах нужно указывать, а на некоторых нет -->
+<!-- Здесь указан класс "cms-page" -->
 
-<body class="cms-index-index">
+<body class="cms-page">
     <div class="page-wrapper">
 
         <!-- Header -->
@@ -231,474 +232,85 @@
         <!-- Main -->
         <main class="main page-main">
 
-            <!-- Главный Слайдер -->
-            <style>
-                .heroSwiper .swiper-pagination {
-                    bottom: 8rem;
-                }
-            </style>
-            <section class="section" style="height: calc(100vh - 150px); min-height: 500px;">
-                <div class="swiper heroSwiper h-100">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide h-100">
-                            <div class="position-relative d-flex align-items-center h-100">
-                                <img src="img/hero-01.png" alt="default alt"
-                                    style="position: absolute; top: 0; width: 100%; height: 100%; object-fit: cover;">
-                                <div class="container">
-                                    <div class="position-relative d-flex flex-column align-items-start"
-                                        style="max-width: 700px;">
-                                        <div>
-                                            <p class="h1">Кудрявая косметика для мужчин</p>
-                                            <p>Новая линейка косметики для кудрявых мужчин</p>
-                                        </div>
-                                        <a class="btn btn-black" href="#">Перейти к косметике</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide h-100">
-                            <div class="position-relative d-flex align-items-center h-100">
-                                <img src="img/hero-01.png" alt="default alt"
-                                    style="position: absolute; top: 0; width: 100%; height: 100%; object-fit: cover;">
-                                <div class="container position-relative">
-                                    <div class="position-relative d-flex flex-column align-items-start"
-                                        style="max-width: 700px;">
-                                        <div>
-                                            <p class="h1">Кудрявая косметика для мужчин</p>
-                                            <p>Новая линейка косметики для кудрявых мужчин</p>
-                                        </div>
-                                        <a class="btn btn-black" href="#">Перейти к косметике</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-            </section>
-
-            <!-- Наплывающая секция -->
-            <section class="section-marquee section py-5 position-relative" style="margin-top: -10rem; z-index: 1;">
+            <!-- Хлебные крошки -->
+            <section class="section py-3">
                 <div class="container">
-                    <div class="bg-white rounded-3 shadow-lg p-3 p-lg-5">
-                        <div class="row align-items-center">
-                            <div class="col-lg-3">
-                                <div class="text-center text-lg-start mb-4 mb-lg-0">
-                                    <p class="h1 fw-700">Кудрявый магазин</p>
-                                    <p class="fs-16 fs-lg-10 mb-0">Утюг для волос тебе больше<br>не понадобится. Пришло
-                                        время<br>полюбить свою кудрявую природу!</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-9">
-                                <div class="marquee">
-                                    <div class="marquee-track">
-                                        <div class="d-flex align-items-center">
-                                            <div class="marquee-item"><img src="img/marquee/001.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/002.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/003.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/004.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/005.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/006.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/007.png" alt="default alt">
-                                            </div>
-                                        </div>
-                                        <!-- Дубль -->
-                                        <div class="d-flex align-items-center">
-                                            <div class="marquee-item"><img src="img/marquee/001.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/002.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/003.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/004.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/005.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/006.png" alt="default alt">
-                                            </div>
-                                            <div class="marquee-item"><img src="img/marquee/007.png" alt="default alt">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <nav class="d-flex" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                            <li class="breadcrumb-item"><a href="#">Блог</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Как ускорить сушку волос?</li>
+                        </ol>
+                    </nav>
                 </div>
             </section>
 
-            <!-- Товары -->
+            <!-- Инфо -->
             <section class="section py-5">
                 <div class="container">
-                    <div class="text-center mb-5">
-                        <h2 class="h2">Товары для кудрявых и волнистых</h2>
-                    </div>
+                    <div class="blog-single-container mx-auto" style="max-width: 960px;">
 
-                    <!-- Сетка товаров -->
-                    <div class="grid-products">
-                        <div class="row g-2 row-cols-2 row-cols-md-3 row-cols-lg-4">
+                        <h1 class="fw-400 mb-5">Как ускорить сушку волос?</h1>
 
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Добавить в избранное">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-shine" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Восстанавливающая крем-маска Мята и Лимон</a>
-                                        </p>
-                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-    
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <span class="badge fs-10 fs-lg-14 bg-danger">Акция 2 по цене 1</span>
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
-                                    <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Уже в избранном">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-shine" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Кондиционер "Упругие локоны"</a>
-                                        </p>
-                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-    
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <span class="badge fs-10 fs-lg-14 bg-success">Нет в наличии</span>
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
-                                    <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Уже в избранном">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-shine" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Укрепляющая крем-маска Кокос и Драгон фрукт</a>
-                                        </p>
-                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <span class="badge fs-10 fs-lg-14 bg-info-purple">Снова в наличии</span>
-                                    <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Добавить в избранное">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-shine" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Гель сильной фиксации</a>
-                                        </p>
-                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-    
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <span class="badge fs-10 fs-lg-14 bg-info">Предзаказ</span>
-                                    <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Добавить в избранное">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-shine" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Восстанавливающая крем-маска Мята и Лимон</a>
-                                        </p>
-                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-    
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <span class="badge fs-10 fs-lg-14 bg-warning">Новинка</span>
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
-                                    <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Уже в избранном">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-shine" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Восстанавливающая крем-маска Мята и Лимон</a>
-                                        </p>
-                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-    
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Добавить в избранное">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-shine" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Восстанавливающая крем-маска Мята и Лимон</a>
-                                        </p>
-                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-    
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Добавить в избранное">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-shine" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Восстанавливающая крем-маска Мята и Лимон</a>
-                                        </p>
-                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            
+                        <div class="blog-single-img">
+                            <img class="rounded-3 w-100 mb-4" src="img/blog-single/001.png" alt="blog single img">
                         </div>
-                    </div>
 
-                    <!-- Ссылка на архив -->
-                    <div class="text-center mt-5">
-                        <a class="text-uppercase" href="#">
-                            Перейти в каталог
-                            <svg class="ms-2" width="41" height="6" viewBox="0 0 41 6" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M41 3L36 0.113249V5.88675L41 3ZM0 3.5H36.5V2.5H0V3.5Z" fill="#685BC6" />
-                            </svg>
-                        </a>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- CTA -->
-            <section class="section py-5">
-                <div class="container">
-                    <div class="bg-white rounded-3 shadow-lg">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-lg-6">
-                                <img class="w-100" src="img/cta-01.png" alt="">
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex flex-column align-items-start p-3 p-lg-5">
-                                    <p class="h3 mb-3">Не забудь про подарочные сертификаты для своей кудрявой половинки
-                                    </p>
-                                    <p class="mb-4">Номиналом: 2000, 5000, 10000 ₽</p>
-                                    <a class="btn btn-primary btn-lg text-uppercase w-100 w-lg-auto px-lg-6" href="#">Пошопимся</a>
+                        <div class="blog-single-text">
+                            <p>Иногда может показаться, что уход по канонам кудрявого метода занимает много времени. У некоторых на сушку кудрей уходит несколько часов, а то и больше! 😨<br>
+                                В этой статье поделимся советами, которые помогут ускорить этот процесс ⬇️</p>
+                            <h2>1. Наносить более лёгкие текстуры стайлинга</h2>
+                            <p>Сушка волос, на которые нанесена пенка, займёт не очень много времени, а локоны получатся воздушные.</p>
+                            <div class="row g-2 row-cols-1 row-cols-md-2 row-cols-lg-2 mb-4">
+                                <div class="col">
+                                    <img class="rounded-3" src="img/blog-single/002.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <img class="rounded-3" src="img/blog-single/003.png" alt="">
                                 </div>
                             </div>
+                            <p>В отличие от укладки с <a href="#">гелем</a>: высыхание потребует больше времени, но завитки будут более оформленными и упругими.</p>
+                            <div class="row g-2 row-cols-1 row-cols-md-2 row-cols-lg-2 mb-4">
+                                <div class="col">
+                                    <img class="rounded-3" src="img/blog-single/004.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <img class="rounded-3" src="img/blog-single/005.png" alt="">
+                                </div>
+                            </div>
+                            <p>Скорость сушки в этих случаях отличается, потому что пенка имеет воздушную и лёгкую текстуру, а гель – плотную.</p>
+                            <h2>2. Сушить волосы феном с диффузором, а не естественным способом.</h2>
+                            <p>Поток воздуха ускоряет естественный процесс испарения влаги, из-за чего завитки высыхают быстрее.</p>
+                            <img class="rounded-3 w-100 mb-4" src="img/blog-single/006.png" alt="blog single img">
+                            <p>Мы провели опрос среди нашей команды и выяснили, что совершенно разные волосы самостоятельно высыхают минимум за 2 часа. А при сушке феном с диффузором – всего за 20-30 минут 🤩</p>
+                            <div class="p-3 py-2 mb-3" style="border-left: 1px solid #CCCCCC;">
+                                <p>🤫 Лайфхак: чередование холодного и самого горячего воздуха ускорит сушку феном. Чтобы понять, как долго сушить завитки горячим потоком, ориентируйтесь <br>по коже головы – как только начинает жечь, зажимайте кнопку холодного воздуха.</p>
+                            </div>
+                            <h2>3. Глубокое увлажнение = долгое высыхание волос.</h2>
+                            <p>Например, натуральные плёнкообразователи в составе наших масок задерживают влагу в волосах. Поэтому на высыхание потребуется больше времени, чем после обычного увлажнения.</p>
+                            <a href="https://youtu.be/TKQl0ABHj9s" data-fancybox="video-youtube">
+                                <img class="rounded-3 w-100 mb-4" src="img/blog-single/007.jpg" alt="blog single img">
+                            </a>
+                            <p>Если перед важным мероприятием вы планируете устроить СПА для волос и нанести маску, заложите достаточно времени и на сушку локонов, чтобы никуда не опоздать 😉</p>
                         </div>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Блог -->
-            <section class="section py-5">
-                <div class="container">
-                    <div class="text-center mb-5">
-                        <h2 class="h2">Советы для кудрявых и волнистых</h2>
-                    </div>
-
-                    <!-- Сетка блога -->
-                    <div class="grid-blog">
-                        <div class="row g-2 row-cols-1 row-cols-md-3 row-cols-lg-3">
-
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-blog h-100">
-                                    <a class="hover-shine" href="blog-single.html">
-                                        <img class="card-img" src="img/blog-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <div class="blog-meta mb-3">
-                                            <span>11 мая 2022</span>
-                                        </div>
-                                        <a class="h4 fw-400 card-title text-uppercase" href="#">Как из пуха получить
-                                            оформленные кудри?</a>
-                                    </div>
-                                </article>
+                        <div class="blog-navigation mt-5">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a href="blog-single.html">
+                                    <svg width="41" height="6" viewBox="0 0 41 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 3L5 0.113249V5.88675L0 3ZM41 3.5H4.5V2.5H41V3.5Z" fill="#685BC6"/>
+                                    </svg>                                        
+                                </a>
+                                <a class="text-uppercase" href="blog.html">Перейти в блог</a>
+                                <a href="blog-single-02.html">
+                                    <svg width="41" height="6" viewBox="0 0 41 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41 3L36 0.113249V5.88675L41 3ZM0 3.5H36.5V2.5H0V3.5Z" fill="#685BC6"/>
+                                    </svg>                                        
+                                </a>
                             </div>
-    
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-blog h-100">
-                                    <a class="hover-shine" href="blog-single.html">
-                                        <img class="card-img" src="img/blog-02.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <div class="blog-meta mb-3">
-                                            <span>11 мая 2022</span>
-                                        </div>
-                                        <a class="h4 fw-400 card-title text-uppercase" href="#">Защита кудрявых волос летом:
-                                            как, чем и зачем?</a>
-                                    </div>
-                                </article>
-                            </div>
-    
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-blog h-100">
-                                    <a class="hover-shine" href="blog-single.html">
-                                        <img class="card-img" src="img/blog-03.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <div class="blog-meta mb-3">
-                                            <span>11 мая 2022</span>
-                                        </div>
-                                        <a class="h4 fw-400 card-title text-uppercase" href="#">Бессульфатные шампуни. Как
-                                            подобрать "тот самый"?</a>
-                                    </div>
-                                </article>
-                            </div>
-    
                         </div>
-                    </div>
-    
-                    <!-- Ссылка на архив -->
-                    <div class="text-center mt-5">
-                        <a class="text-uppercase" href="#">
-                            Читать больше
-                            <svg class="ms-2" width="41" height="6" viewBox="0 0 41 6" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M41 3L36 0.113249V5.88675L41 3ZM0 3.5H36.5V2.5H0V3.5Z" fill="#685BC6" />
-                            </svg>
-                        </a>
-                    </div>                    
 
+                    </div>
                 </div>
             </section>
 
