@@ -941,6 +941,12 @@ img {
     color: #212121;
 }
 
+.card-product .card-img {
+    width: 100%;
+    height: 169px;
+    object-fit: cover;
+}
+
 .card-blog {
     --bs-link-color: #212121;
     --bs-link-hover-color: #685BC6;
@@ -948,6 +954,21 @@ img {
 
 .card-blog .blog-meta {
     color: #A2A2A2;
+}
+
+.card-blog .card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (min-width: 992px) {
+    .card-product .card-img {
+        height: 282px;
+    }
+    .card-blog .card-img {
+        height: 550px;
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////
