@@ -381,7 +381,7 @@ textarea {
 
 .checkout-form .form-control,
 .checkout-form .form-select {
-    min-height: 46px;
+    min-height: 61px;
     border-radius: 0.5rem;
     border-color: transparent;
     background-color: #F6F6F6;
@@ -1009,7 +1009,7 @@ img {
     --bs-link-hover-color: #685BC6;
 }
 
-.card-product .btn-wishlist,
+.btn-wishlist,
 .card-product .badge {
     position: absolute;
     top: 0.75rem;
@@ -1022,11 +1022,11 @@ img {
     left: 0.75rem;
 }
 
-.card-product .btn-wishlist {
+.btn-wishlist {
     border: none;
 }
 
-.card-product .btn-wishlist.active .svg-figure{
+.btn-wishlist.active .svg-figure{
     fill: #212121;
 }
 
@@ -1080,7 +1080,7 @@ img {
         height: 550px;
     }
     .card-cart-item .card-img {
-        height: 122px;
+        height: 146px;
     }
 }
 
@@ -1147,6 +1147,26 @@ img {
 .swiper .btn-next:disabled,
 .swiper .btn-next.disabled {
     opacity: 0 !important;
+}
+
+.swiper .slide-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.productItemSwiper .slide-img {
+    height: 300px;
+}
+
+.thumbsSwiper .slide-img {
+    height: 84px;
+}
+
+@media (min-width: 992px) {
+    .productItemSwiper .slide-img {
+        height: 481px;
+    }
 }
 
 .accordion {
@@ -1461,7 +1481,7 @@ img {
         font-size: 1.25rem;
     }
 
-    .checkout-container {
+    .shadow-box {
         box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
     }
 }

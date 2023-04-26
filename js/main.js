@@ -12,6 +12,26 @@ const heroSwiper = new Swiper('.heroSwiper', {
     },
 });
 
+// На shop-item.html
+const thumbsSwiper = new Swiper('.thumbsSwiper', {
+    spaceBetween: 8,
+    slidesPerView: 6,
+});
+const productItemSwiper = new Swiper('.productItemSwiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 12,
+    grabCursor: true,
+    thumbs: {
+        swiper: thumbsSwiper,
+    },
+    breakpoints: {
+        992: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ PHONE MASK ]
 

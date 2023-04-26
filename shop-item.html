@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>Cart - Curl Shop</title>
+    <title>Shop-item - Curl Shop</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -238,7 +238,8 @@
                     <nav class="d-flex" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+                            <li class="breadcrumb-item"><a href="catalog.html">Шампуни</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Шампунь "Упругие локоны"</li>
                         </ol>
                     </nav>
                 </div>
@@ -247,208 +248,274 @@
             <!-- Контент -->
             <section class="section py-5">
                 <div class="container">
-                    <h1 class="fw-400 mb-5">Корзина</h1>
+
                     <div>
                         <div class="row g-3">
                             <div class="col-lg-7">
-                                <div class="cart-products">
-
-                                    <!-- Product-->
-                                    <div class="card card-cart-item">
-                                        <div class="card-body px-0">
-                                            <div class="row g-2 g-lg-4">
-                                                <div class="col-4 col-md-2 col-lg-4 col-xl-3">
-                                                    <a class="hover-shine" href="shop-item.html">
-                                                        <img class="card-img rounded-3" src="img/prod-01.png" alt="...">
-                                                    </a>
-                                                </div>
-                                                <div class="col-5 col-md-7 col-lg-4 col-xl-6">
-                                                    <div class="d-flex flex-column align-items-start justify-content-between h-100">
-                                                        <p class="card-title fs-14 fs-lg-18 fw-700">
-                                                            <a href="shop-item.html">Кондиционер "Упругие локоны"</a>
-                                                        </p>
-                                                        <div class="input-quantity input-group" style="max-width: 120px;">
-                                                            <!-- Минус -->
-                                                            <button type="button" class="btn border-0 px-2">
-                                                                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <rect x="12.0341" y="0.078125" width="0.84576" height="11.7361" transform="rotate(90 12.0341 0.078125)" fill="#212121"/>
-                                                                </svg>
-                                                            </button>
-                                                            <!-- Поле -->
-                                                            <input type="text" class="form-control text-center border-0" value="1">
-                                                            <!-- Плюс -->
-                                                            <button type="button" class="btn border-0 px-2">
-                                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <rect x="6.25024" y="0.00390625" width="0.902778" height="10.9949" fill="#212121"/>
-                                                                    <rect x="12.3721" y="5.26172" width="0.84576" height="11.7361" transform="rotate(90 12.3721 5.26172)" fill="#212121"/>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3 col-md-3 col-lg-4 col-xl-3 text-end">
-                                                    <div class="d-flex flex-column flex-lg-row align-items-end align-items-lg-start justify-content-between justify-content-lg-end h-100">
-                                                        <button type="button" class="btn border-0 px-2 order-lg-2 ms-lg-3">
-                                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M15.7035 0.871249L0.620307 16.0948M15.5631 16.0946L0.479858 0.871094" stroke="#212121" stroke-width="0.84576"/>
-                                                            </svg>
-                                                        </button>
-                                                        <div class="cart-price mb-2 mb-lg-0 order-lg-1 flex-shrink-0">
-                                                            <span class="fs-16">1 290 ₽</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <!-- Слайдер -->
+                                <div class="swiper productItemSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="img/shop-item-01.png" data-fancybox="product-gallery">
+                                                <img class="slide-img" src="img/shop-item-01.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="img/shop-item-01.png" data-fancybox="product-gallery">
+                                                <img class="slide-img" src="img/shop-item-01.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="img/shop-item-01.png" data-fancybox="product-gallery">
+                                                <img class="slide-img" src="img/shop-item-01.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="img/shop-item-01.png" data-fancybox="product-gallery">
+                                                <img class="slide-img" src="img/shop-item-01.png" alt="">
+                                            </a>
                                         </div>
                                     </div>
-
-                                    <!-- Product-->
-                                    <div class="card card-cart-item">
-                                        <div class="card-body px-0">
-                                            <div class="row g-2 g-lg-4">
-                                                <div class="col-4 col-md-2 col-lg-4 col-xl-3">
-                                                    <a class="hover-shine" href="shop-item.html">
-                                                        <img class="card-img rounded-3" src="img/prod-01.png" alt="...">
-                                                    </a>
-                                                </div>
-                                                <div class="col-5 col-md-7 col-lg-4 col-xl-6">
-                                                    <div class="d-flex flex-column align-items-start justify-content-between h-100">
-                                                        <p class="card-title fs-14 fs-lg-18 fw-700">
-                                                            <a href="shop-item.html">Кондиционер "Упругие локоны"</a>
-                                                        </p>
-                                                        <div class="input-quantity input-group" style="max-width: 120px;">
-                                                            <!-- Минус -->
-                                                            <button type="button" class="btn border-0 px-2">
-                                                                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <rect x="12.0341" y="0.078125" width="0.84576" height="11.7361" transform="rotate(90 12.0341 0.078125)" fill="#212121"/>
-                                                                </svg>
-                                                            </button>
-                                                            <!-- Поле -->
-                                                            <input type="text" class="form-control text-center border-0" value="1">
-                                                            <!-- Плюс -->
-                                                            <button type="button" class="btn border-0 px-2">
-                                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <rect x="6.25024" y="0.00390625" width="0.902778" height="10.9949" fill="#212121"/>
-                                                                    <rect x="12.3721" y="5.26172" width="0.84576" height="11.7361" transform="rotate(90 12.3721 5.26172)" fill="#212121"/>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3 col-md-3 col-lg-4 col-xl-3 text-end">
-                                                    <div class="d-flex flex-column flex-lg-row align-items-end align-items-lg-start justify-content-between justify-content-lg-end h-100">
-                                                        <button type="button" class="btn border-0 px-2 order-lg-2 ms-lg-3">
-                                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M15.7035 0.871249L0.620307 16.0948M15.5631 16.0946L0.479858 0.871094" stroke="#212121" stroke-width="0.84576"/>
-                                                            </svg>
-                                                        </button>
-                                                        <div class="cart-price d-flex align-items-center order-lg-1 flex-shrink-0">
-                                                            <span class="fs-16">1 290 ₽</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Product-->
-                                    <div class="card card-cart-item">
-                                        <div class="card-body px-0">
-                                            <div class="row g-2 g-lg-4">
-                                                <div class="col-4 col-md-2 col-lg-4 col-xl-3">
-                                                    <a class="hover-shine" href="shop-item.html">
-                                                        <img class="card-img rounded-3" src="img/prod-01.png" alt="...">
-                                                    </a>
-                                                </div>
-                                                <div class="col-5 col-md-7 col-lg-4 col-xl-6">
-                                                    <div class="d-flex flex-column align-items-start justify-content-between h-100">
-                                                        <p class="card-title fs-14 fs-lg-18 fw-700">
-                                                            <a href="shop-item.html">Кондиционер "Упругие локоны"</a>
-                                                        </p>
-                                                        <div class="input-quantity input-group" style="max-width: 120px;">
-                                                            <!-- Минус -->
-                                                            <button type="button" class="btn border-0 px-2">
-                                                                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <rect x="12.0341" y="0.078125" width="0.84576" height="11.7361" transform="rotate(90 12.0341 0.078125)" fill="#212121"/>
-                                                                </svg>
-                                                            </button>
-                                                            <!-- Поле -->
-                                                            <input type="text" class="form-control text-center border-0" value="1">
-                                                            <!-- Плюс -->
-                                                            <button type="button" class="btn border-0 px-2">
-                                                                <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <rect x="6.25024" y="0.00390625" width="0.902778" height="10.9949" fill="#212121"/>
-                                                                    <rect x="12.3721" y="5.26172" width="0.84576" height="11.7361" transform="rotate(90 12.3721 5.26172)" fill="#212121"/>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3 col-md-3 col-lg-4 col-xl-3 text-end">
-                                                    <div class="d-flex flex-column flex-lg-row align-items-end align-items-lg-start justify-content-between justify-content-lg-end h-100">
-                                                        <button type="button" class="btn border-0 px-2 order-lg-2 ms-lg-3">
-                                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M15.7035 0.871249L0.620307 16.0948M15.5631 16.0946L0.479858 0.871094" stroke="#212121" stroke-width="0.84576"/>
-                                                            </svg>
-                                                        </button>
-                                                        <div class="cart-price d-flex align-items-center order-lg-1 flex-shrink-0">
-                                                            <span class="fs-16">1 290 ₽</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
-
+                                <!-- Тумбы -->
+                                <div class="d-none d-lg-block mt-2">
+                                    <div class="swiper thumbsSwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="slide-img" src="img/shop-item-01.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="slide-img" src="img/shop-item-02.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="slide-img" src="img/shop-item-03.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="slide-img" src="img/shop-item-04.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>                                                       
                             </div>
                             <div class="col-lg-5">
-                                <div class="ps-lg-5">
-                                    <div class="shadow-box bg-white rounded-3 p-lg-4">
-                                        <form class="checkout-form" action="#">
-
-                                            <div class="cart-summary mb-4">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="fs-16 fs-lg-14">Сумма по товарам</span>
-                                                    <span class="fs-16 fs-lg-14">20 970 ₽</span>
-                                                </div>
-                                                <!-- Комментарий от заказчика: -->
-                                                <!-- если у клиента не персональной скидки, то этот пункт убирается -->
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="fs-16 fs-lg-14">Персональная скидка</span>
-                                                    <span class="text-danger fs-16 fs-lg-14">- 10 %</span>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="fs-24 fs-lg-24 text-black text-uppercase fw-700">Итого</span>
-                                                    <span class="fs-24 fs-lg-24 text-black">20 970 ₽</span>
-                                                </div>
+                                <div class="ps-lg-5 h-100">
+                                    <div class="d-flex flex-column justify-content-between h-100">
+    
+                                        <div>
+                                            <p class="text-uppercase fs-12 fs-lg-14" style="color: #a2a2a2;">арт. SHMP0010</p>
+                                            <div class="position-relative pe-5">
+                                                <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                                <button class="btn btn-icon btn-wishlist top-0 right-0" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Добавить в избранное">
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd" d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z" stroke="#212121" stroke-width="1.1244" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                                <h1 class="h4 text-uppercase mb-3">Шампунь "Упругие локоны"</h1>
                                             </div>
-
-                                            <div class="mb-4">
-                                                <p class="h6">Промокод</p>
-                                                <div class="form-group mb-3">
-                                                    <div class="promo-input position-relative">
-                                                        <input type="text" class="form-control fs-14 fs-lg-14" placeholder="Введите промокод">
-                                                        <button type="button" class="btn btn-black fs-14 fs-lg-12 position-absolute top-50 end-0 translate-middle-y py-3 me-1">Применить</button>
-                                                    </div>
-                                                </div>
+                                            <p>860 ₽</p>
+                                            <form action="#">
+                                                <button type="submit" class="btn btn-primary btn-lg text-uppercase w-100">Добавить в корзину</button>
+                                            </form>
+                                            <div class="text-center mt-3">
+                                                <a class="text-uppercase" href="cart.html">Оформить заказ</a>
                                             </div>
-
-                                            <!-- ВНИМАНИЕ! ДЛЯ ПРОГРАММИСТА! -->
-                                            <!-- Кнопка ниже закомментирована только для того чтобы отобразить ссылку для клиента -->
-                                            <!-- <button type="submit" class="btn btn-primary btn-lg text-uppercase w-100">Оформить заказ</button> -->
-
-                                            <!-- Эта ссылка для демонстрации переходов клиенту -->
-                                            <!-- В проекте она не нужна, нужна кнопка закомментированная выше -->
-                                            <a class="btn btn-primary btn-lg text-uppercase w-100" href="cart-checkout.html">Оформить заказ</a>
-
-                                        </form>
-                                        
+                                        </div>
+    
+                                        <div class="mt-5">
+                                            <p>Видео-инструкция по применению</p>
+                                            <div>
+                                                <a href="https://youtu.be/TKQl0ABHj9s" data-fancybox="item-video-youtube">
+                                                    <img class="rounded-3 w-100" src="img/shop-item-video.png" alt="" style="height: 250px; object-fit: cover;">
+                                                </a>
+                                            </div>
+                                        </div>
+    
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="product-info mt-5">
+                        <!-- ТАБЫ -->
+                        123
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Так же покупают -->
+            <section class="section py-5">
+                <div class="container">
+                    <div class="mb-4">
+                        <h2 class="h3 fw-400">С этим товаром так же покупают</h2>
+                    </div>
+
+                    <!-- Сетка товаров -->
+                    <div class="grid-products">
+                        <div class="row g-2 row-cols-2 row-cols-md-3 row-cols-lg-4">
+
+                            <!-- Item -->
+                            <div class="col">
+                                <article class="card card-product h-100">
+                                    <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" data-bs-title="Добавить в избранное">
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
+                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img" src="img/prod-01.png" alt="">
+                                    </a>
+                                    <div class="card-body px-0">
+                                        <p class="card-title fs-12 fs-lg-18 fw-700">
+                                            <a href="shop-item.html">Восстанавливающая крем-маска Мята и Лимон</a>
+                                        </p>
+                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
+                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+    
+                            <!-- Item -->
+                            <div class="col">
+                                <article class="card card-product h-100">
+                                    <span class="badge fs-10 fs-lg-14 bg-danger">Акция 2 по цене 1</span>
+                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                    <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" data-bs-title="Уже в избранном">
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
+                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img" src="img/prod-01.png" alt="">
+                                    </a>
+                                    <div class="card-body px-0">
+                                        <p class="card-title fs-12 fs-lg-18 fw-700">
+                                            <a href="shop-item.html">Кондиционер "Упругие локоны"</a>
+                                        </p>
+                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
+                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+    
+                            <!-- Item -->
+                            <div class="col">
+                                <article class="card card-product h-100">
+                                    <span class="badge fs-10 fs-lg-14 bg-success">Нет в наличии</span>
+                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                    <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" data-bs-title="Уже в избранном">
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
+                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img" src="img/prod-01.png" alt="">
+                                    </a>
+                                    <div class="card-body px-0">
+                                        <p class="card-title fs-12 fs-lg-18 fw-700">
+                                            <a href="shop-item.html">Укрепляющая крем-маска Кокос и Драгон фрукт</a>
+                                        </p>
+                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
+                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            
+                            <!-- Item -->
+                            <div class="col">
+                                <article class="card card-product h-100">
+                                    <span class="badge fs-10 fs-lg-14 bg-info-purple">Снова в наличии</span>
+                                    <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" data-bs-title="Добавить в избранное">
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
+                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img" src="img/prod-01.png" alt="">
+                                    </a>
+                                    <div class="card-body px-0">
+                                        <p class="card-title fs-12 fs-lg-18 fw-700">
+                                            <a href="shop-item.html">Гель сильной фиксации</a>
+                                        </p>
+                                        <p class="product-meta fs-10">Для волнистых и кудрявых волос</p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
+                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="section py-5">
+                <div class="container">
+                    <div class="bg-white rounded-3 shadow-lg">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-lg-6">
+                                <img class="w-100" src="img/cta-01.png" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-start p-3 p-lg-5">
+                                    <p class="h3 mb-3">Не забудь про подарочные сертификаты для своей кудрявой половинки
+                                    </p>
+                                    <p class="mb-4">Номиналом: 2000, 5000, 10000 ₽</p>
+                                    <a class="btn btn-primary btn-lg text-uppercase w-100 w-lg-auto px-lg-6" href="#">Пошопимся</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Подписка -->
+            <section class="section py-5">
+                <div class="container">
+                    <div class="mx-auto" style="max-width: 784px;">
+                        <div class="text-center mb-5">
+                            <h2 class="h2">Новости о скидках до 50% получают те, кто подписался!</h2>
+                        </div>
+
+                        <form class="subscription-form" action="#" method="post">
+                            <label class="form-label d-none">email</label>
+                            <input type="email" class="form-control form-control-lg" placeholder="Введите email">
+                            <button type="submit" class="btn btn-primary btn-lg text-uppercase w-100 w-lg-auto px-lg-6 mt-2 mt-lg-0">Подписаться</button>
+                        </form>
                     </div>
                 </div>
             </section>
