@@ -232,80 +232,6 @@
         <main class="main page-main">
 
             <!-- Главный Слайдер -->
-            <style>
-                .section-hero {
-                    height: 460px;
-                }
-
-                .hero-slide-container {
-                    position: relative;
-                    display: flex;
-                    align-items: start;
-                    height: 100%;
-                    padding-top: 8rem;
-                    padding-bottom: 1.375rem;
-                }
-
-                .hero-slide-bg-img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-
-                .heroSwiper .swiper-pagination {
-                    bottom: calc(100% - 7rem);
-                    left: calc(1.5rem * 0.5);
-                    width: auto;
-                }
-
-                @media (min-width: 576px) {
-                    .section-hero {
-                        height: 500px;
-                    }
-                    .hero-slide-container {
-                        padding-top: 8.5rem;
-                    }
-                    .heroSwiper .swiper-pagination {
-                        bottom: 1.5rem;
-                        left: 0;
-                        width: 100%;
-                    }
-                    .hero-slide-container {
-                        padding-bottom: 4rem;
-                    }
-                }
-
-                @media (min-width: 768px) {
-                    .section-hero {
-                        height: 600px;
-                    }
-                    .hero-slide-container {
-                        padding-top: 9rem;
-                    }
-                    .heroSwiper .swiper-pagination {
-                        bottom: 1.75rem;
-                    }
-                    .hero-slide-container {
-                        padding-bottom: 5rem;
-                    }
-                }
-
-                @media (min-width: 992px) {
-                    .section-hero {
-                        height: calc(100vh - 150px);
-                        min-height: 500px;
-                    }
-                    .hero-slide-container {
-                        padding-top: 10rem;
-                    }
-                    .heroSwiper .swiper-pagination {
-                        bottom: 6.5rem;
-                    }
-                }
-            </style>
             <section class="section-hero section">
                 <div class="swiper heroSwiper h-100">
                     <div class="swiper-wrapper">
@@ -381,29 +307,6 @@
             </section>
 
             <!-- Наплывающая секция -->
-            <style>
-                .section-marquee {
-                    position: relative;
-                }
-
-                .section-marquee .container-lg {
-                    --bs-gutter-x: 0;
-                }
-
-                @media (min-width: 992px) {
-                    .section-marquee {
-                        margin-top: -5rem;
-                        padding-bottom: 100px !important;
-                        z-index: 1;
-                    }
-                    .section-marquee .container {
-                        --bs-gutter-x: 1.5rem;
-                    }
-                    .hero-marquee {
-                        box-shadow: 0px 30px 57px rgba(0, 0, 0, 0.05);
-                    }
-                }
-            </style>
             <section class="section-marquee section py-5 py-lg-0">
                 <div class="container-lg">
                     <div class="hero-marquee bg-white rounded-3 p-0 p-lg-5 py-lg-4">
@@ -434,7 +337,7 @@
                                             <div class="marquee-item"><img src="img/marquee/007.png" alt="default alt">
                                             </div>
                                         </div>
-                                        <!-- Дубль -->
+                                        <!-- Необходимый для анимации дубль -->
                                         <div class="d-flex align-items-center">
                                             <div class="marquee-item"><img src="img/marquee/001.png" alt="default alt">
                                             </div>
