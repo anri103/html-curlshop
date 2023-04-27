@@ -1424,10 +1424,16 @@ img {
     border: 0;
     border-bottom: 1px solid transparent;
     margin-bottom: -1px;
+    opacity: 0.3;
+}
+
+.info-tabs-link:hover {
+    opacity: 1;
 }
 
 .info-tabs-link.active {
     border-bottom: 1px solid #212121;
+    opacity: 1;
 }
 
 .product-info .tab-content > .tab-pane {
@@ -1672,7 +1678,7 @@ img {
     .product-info .tab-content > .active {
         display: block;
     }
-    
+
     .product-info .collapse:not(.show) {
         display: block;
     }
