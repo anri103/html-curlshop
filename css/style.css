@@ -1169,68 +1169,6 @@ img {
     }
 }
 
-.accordion {
-    --bs-accordion-border-width: 0;
-    --bs-accordion-border-radius: 0;
-    --bs-accordion-inner-border-radius: 0;
-    --bs-accordion-btn-padding-x: 1.25rem;
-    --bs-accordion-btn-padding-y: 1rem;
-    --bs-accordion-btn-color: #000;
-    --bs-accordion-btn-bg: transparent;
-    --bs-accordion-btn-icon: url(../img/faq-plus.svg);
-    --bs-accordion-btn-icon-width: 1.5rem;
-    --bs-accordion-btn-active-icon: url(../img/faq-plus.svg);
-    --bs-accordion-btn-focus-box-shadow: none;
-    --bs-accordion-body-padding-x: 1.25rem;
-    --bs-accordion-body-padding-y: 1rem;
-    --bs-accordion-active-color: #000;
-    --bs-accordion-active-bg: transparent;
-}
-
-.pagination {
-    --bs-pagination-item-margin-x: 0.125rem;
-    --bs-pagination-item-margin-y: 0;
-    --bs-pagination-item-width: 2.5rem;
-    --bs-pagination-item-height: 2.5rem;
-    --bs-pagination-padding-x: 0;
-    --bs-pagination-padding-y: 0;
-    --bs-pagination-font-size: 1rem;
-    --bs-pagination-color: var(--bs-link-color);
-    --bs-pagination-bg: transparent;
-    --bs-pagination-border-width: 0;
-    --bs-pagination-border-color: transparent;
-    --bs-pagination-border-radius: 0.375rem;
-    --bs-pagination-hover-color: var(--bs-link-hover-color);
-    --bs-pagination-hover-bg: #e9ecef;
-    --bs-pagination-hover-border-color: transparent;
-    --bs-pagination-focus-color: var(--bs-link-hover-color);
-    --bs-pagination-focus-bg: #e9ecef;
-    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-    --bs-pagination-active-color: #fff;
-    --bs-pagination-active-bg: #ccc;
-    --bs-pagination-active-border-color: transparent;
-    --bs-pagination-disabled-color: #6c757d;
-    --bs-pagination-disabled-bg: #fff;
-    --bs-pagination-disabled-border-color: transparent;
-}
-
-.pagination .page-item {
-    margin: var(--bs-pagination-item-margin-y) var(--bs-pagination-item-margin-x);
-}
-
-.pagination .page-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: var(--bs-pagination-item-width);
-    height: var(--bs-pagination-item-height);
-    border-radius: var(--bs-pagination-border-radius);
-}
-
-.pagination .page-item:not(:first-child) .page-link {
-    margin-left: 0;
-}
-
 .tooltip {
     --bs-tooltip-color: #212121;
     --bs-tooltip-bg: #f6f6f6;
@@ -1469,6 +1407,64 @@ img {
 
 .info-collapse-link.collapsed::after {
     background-image: url("data:image/svg+xml,%3Csvg width='23' height='24' viewBox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='11' y='0.5' width='1' height='23' fill='%23212121'/%3E%3Crect x='23' y='11.5005' width='1' height='23' transform='rotate(90 23 11.5005)' fill='%23212121'/%3E%3C/svg%3E");
+}
+
+.form-check-inline {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.form-check-inline .form-check-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.form-check-inline.check-color .form-check-label {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.form-check-inline.check-color .form-check-label > span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.form-check-inline.check-color .form-check-input:checked + .form-check-label {
+    border: 1px solid #212121;
+}
+
+.form-check-inline.check-size .form-check-label {
+    width: 34px;
+    height: 34px;
+    color: #212121;
+    background-color: transparent;
+}
+
+.form-check-inline.check-size .form-check-input:checked + .form-check-label {
+    color: #fff;
+    background-color: #212121;
+}
+
+.form-check-inline.check-sert .form-check-label {
+    padding: 3px 10px;
+    color: #212121;
+    background-color: transparent;
+}
+
+.form-check-inline.check-sert .form-check-input:checked + .form-check-label {
+    color: #fff;
+    background-color: #212121;
 }
 
 /*//////////////////////////////////////////////////////////////////
