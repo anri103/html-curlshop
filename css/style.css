@@ -276,6 +276,10 @@ h1,
     .fs-lg-34 {
         font-size: 34px;
     }
+
+    .fs-lg-42 {
+        font-size: 42px;
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -1165,7 +1169,7 @@ img {
 
 @media (min-width: 992px) {
     .productItemSwiper .slide-img {
-        height: 481px;
+        height: 500px;
     }
 }
 
@@ -1228,39 +1232,7 @@ img {
     margin-bottom: 1rem;
 }
 
-.shop-categories {
-    position: relative;
-    overflow: hidden;
-    touch-action: pan-y;
-}
-
-.shop-categories .categories-list {
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    white-space: nowrap;
-    overflow-x: auto;
-    padding-left: 0;
-    list-style: none;
-    margin-bottom: 0;    
-}
-
-.shop-categories .categories-list::-webkit-scrollbar {
-    display: none;
-}
-
-.shop-categories .categories-list li {
-    position: relative;
-    display: inline-block;
-    flex-shrink: 0;
-}
-
-.shop-categories .categories-list li + li {
-    margin-left: 6px;
-}
-
-.shop-categories .categories-list li a {
+.categories-list .categories-link {
     display: block;
     color: #A2A2A2;
     font-size: 14px;
@@ -1271,9 +1243,10 @@ img {
     background-color: transparent;
 }
 
-.shop-categories .categories-list li a.active {
+.categories-list .categories-link.active {
     color: #fff;
     background-color: #212121;
+    border-color: #212121;
     text-decoration: none;
 }
 
@@ -1349,6 +1322,10 @@ img {
     position: relative;
     display: inline-block;
     flex-shrink: 0;
+}
+
+.scrollable-item + .scrollable-item {
+    margin-left: 0.5rem;
 }
 
 .info-tabs-nav {
@@ -1467,6 +1444,83 @@ img {
     background-color: #212121;
 }
 
+.lk-menu .lk-link {
+    display: block;
+    color: #A2A2A2;
+    font-size: 14px;
+    padding: 10px 16px;
+    border: 1px solid #A2A2A2;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.lk-menu .lk-link.active {
+    color: #fff;
+    background-color: #212121;
+    border-color: #212121;
+}
+
+.status-container {
+    position: relative;
+}
+
+.status-line {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background: #212121;
+}
+
+.status-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 2;
+    color: #cccccc;
+    text-align: center;
+    background: #cccccc;
+}
+
+.status-step.active {
+    color: #212121;
+    background: 0 0;
+}
+
+.status-step:first-child,
+.status-step:last-child {
+    flex-grow: 1;
+}
+
+.status-step:first-child {
+    align-items: start;
+    text-align: left;
+}
+
+.status-step:last-child {
+    align-items: end;
+    text-align: right;
+}
+
+.status-step .status-point {
+    position: absolute;
+    top: -6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+
+.status-step .status-text {
+    position: absolute;
+    top: 15px;
+}
+
+.status-step.active .status-point {
+    background-color: #212121;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
 
@@ -1493,52 +1547,6 @@ img {
 }
 
 @media (min-width: 768px) {
-
-    .shop-categories {
-        position: relative;
-        overflow: hidden;
-        touch-action: pan-y;
-    }
-    
-    .shop-categories .categories-list {
-        position: relative;
-        display: block;
-        white-space: normal;
-        overflow-x: auto;
-        margin-right: -16px;
-        margin-left: -16px;
-    }
-    
-    .shop-categories .categories-list li {
-        position: relative;
-        display: inline-block;
-        flex-shrink: 0;
-    }
-    
-    .shop-categories .categories-list li + li {
-        margin-left: 0;
-    }
-    
-    .shop-categories .categories-list li a {
-        display: block;
-        color: #212121;
-        font-size: 18px;
-        padding: 10px 16px;
-        text-transform: uppercase;
-        border: none;
-        border-radius: 0;
-        background-color: transparent;
-    }
-
-    .shop-categories .categories-list li a:hover {
-        text-decoration: underline;
-    }
-    
-    .shop-categories .categories-list li a.active {
-        color: #212121;
-        background-color: transparent;
-        text-decoration: underline;
-    }
 
     .section-hero {
         height: 600px;
@@ -1677,6 +1685,64 @@ img {
 
     .product-info .collapse:not(.show) {
         display: block;
+    }
+
+    .categories-list {
+        margin-right: -16px;
+        margin-left: -16px;
+    }
+    
+    .categories-list .categories-link + .categories-link {
+        margin-left: 0;
+    }
+    
+    .categories-list .categories-link {
+        display: block;
+        color: #212121;
+        font-size: 18px;
+        padding: 10px 16px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    .categories-list .categories-link:hover {
+        text-decoration: underline;
+    }
+    
+    .categories-list .categories-link.active {
+        color: #212121;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    .lk-menu .scrollable-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .lk-menu .scrollable-item + .scrollable-item {
+        margin-left: 0;
+    }
+
+    .lk-menu .lk-link {
+        color: #A2A2A2;
+        font-size: 16px;
+        padding: 10px 0;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    .lk-menu .lk-link:hover {
+        color: #212121;
+    }
+
+    .lk-menu .lk-link.active {
+        color: #212121;
+        background-color: transparent;
     }
 }
 
