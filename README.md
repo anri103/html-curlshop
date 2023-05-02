@@ -16,6 +16,12 @@ https://anri103.github.io/html-curlshop/contact-delivery.html
 https://anri103.github.io/html-curlshop/contact-loyalty.html  
 https://anri103.github.io/html-curlshop/contact-payment.html  
 https://anri103.github.io/html-curlshop/contact-qna.html  
+https://anri103.github.io/html-curlshop/lk-address.html  
+https://anri103.github.io/html-curlshop/lk-bonus.html  
+https://anri103.github.io/html-curlshop/lk-history.html  
+https://anri103.github.io/html-curlshop/lk-notification.html  
+https://anri103.github.io/html-curlshop/lk-notification-single.html  
+https://anri103.github.io/html-curlshop/lk-user.html  
 https://anri103.github.io/html-curlshop/search-results-blog.html  
 https://anri103.github.io/html-curlshop/search-results-catalog.html  
 https://anri103.github.io/html-curlshop/shop-item.html  

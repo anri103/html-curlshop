@@ -1521,6 +1521,28 @@ img {
     background-color: #212121;
 }
 
+.lk-notification-item {
+    --bs-link-color: #212121;
+    --bs-link-hover-color: #685BC6;
+}
+
+.notification-svg .svg-circle {
+    fill: none !important;
+}
+
+.notification-svg.active .svg-circle {
+    fill: #F94239 !important;
+}
+
+.lk-history-container {
+    background-color: transparent;
+}
+
+.lk-history-item {
+    border-radius: var(--bs-border-radius-lg);
+    background-color: #f2f2f2;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
 
@@ -1743,6 +1765,15 @@ img {
     .lk-menu .lk-link.active {
         color: #212121;
         background-color: transparent;
+    }
+
+    .lk-history-container {
+        background-color: #f2f2f2;
+    }
+
+    .lk-history-item {
+        border-radius: 0;
+        border-bottom: 1px solid var(--bs-border-color);
     }
 }
 
