@@ -431,13 +431,13 @@ textarea {
 .payment-item .payment-body {
     position: relative;
     flex: 1 1 auto;
-    padding: 8px 10px;
+    padding: 18px 13px;
     background-color: #F6F6F6;
     border: 1px solid transparent;
 }
 
 .payment-item .payment-body img {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .payment-item input[type="radio"]:checked+.payment-body {
@@ -466,7 +466,7 @@ textarea {
     min-width: 0;
     width: 100%;
     height: 100%;
-    padding: 8px 10px;
+    padding: 14px 15px;
     background-color: #F6F6F6;
     border: 1px solid transparent;
 }
@@ -742,6 +742,22 @@ img {
 .nav-pills .nav-link {
     font-size: 1.25rem;
     text-transform: uppercase;
+}
+
+.nav-link .svg-link:first-child {
+    display: inline-block;
+}
+
+.nav-link .svg-link:last-child {
+    display: none;
+}
+
+.nav-link.active .svg-link:first-child {
+    display: none;
+}
+
+.nav-link.active .svg-link:last-child {
+    display: inline-block;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -1028,6 +1044,10 @@ img {
     word-wrap: normal;
 }
 
+.card-title a {
+    text-decoration: none;
+}
+
 .card-product {
     --bs-link-color: #212121;
     --bs-link-hover-color: #685BC6;
@@ -1063,10 +1083,6 @@ img {
     width: 100%;
     height: 169px;
     object-fit: cover;
-}
-
-.card-product .card-title a {
-    text-decoration: none;
 }
 
 .card-blog {
@@ -1261,6 +1277,7 @@ img {
     border: 1px solid #A2A2A2;
     border-radius: 6px;
     background-color: transparent;
+    text-decoration: none;
 }
 
 .categories-list .categories-link.active {
@@ -1272,6 +1289,8 @@ img {
 
 .cart-summary {
     color: #a2a2a2;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #F2F2F2;
 }
 
 .cart-summary>*+* {
@@ -1347,8 +1366,12 @@ img {
     flex-shrink: 0;
 }
 
-.scrollable-item + .scrollable-item {
-    margin-left: 0.5rem;
+.scrollable-item {
+    margin-right: 0.5rem;
+}
+
+.scrollable-item:last-child {
+    margin-right: 0;
 }
 
 .info-tabs-nav {
@@ -1797,8 +1820,8 @@ img {
         align-items: start;
     }
 
-    .lk-menu .scrollable-item + .scrollable-item {
-        margin-left: 0;
+    .lk-menu .scrollable-item {
+        margin-right: 0;
     }
 
     .lk-menu .lk-link {
