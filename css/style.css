@@ -1512,6 +1512,10 @@ img {
     opacity: 1;
 }
 
+.product-sku-desc .btn-wishlist {
+    --btn-icon-size: 22px;
+}
+
 .product-info .tab-content > .tab-pane {
     display: block;
     border-top: 1px solid #CCCCCC;
