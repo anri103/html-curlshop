@@ -1281,7 +1281,7 @@ img {
 }
 
 .marquee-item {
-    width: max-content;
+    width: 85px;
     padding: 0;
 }
 
@@ -1954,6 +1954,10 @@ img {
 
     .hero-marquee {
         box-shadow: 0px 30px 57px rgba(0, 0, 0, 0.05);
+    }
+
+    .marquee-item {
+        width: 120px;
     }
 
     .scrollable-wrapper {
