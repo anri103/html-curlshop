@@ -35,16 +35,21 @@ const productItemSwiper = new Swiper('.productItemSwiper', {
 //////////////////////////////////////////////////////////////////
 // [ PHONE MASK ]
 
-document.addEventListener('DOMContentLoaded', function () {
+var maskPhone = document.querySelectorAll('.maskPhone')
+var maskDate = document.querySelectorAll('.maskDate')
 
-    var mask1 = document.getElementById('maskPhone1')
-    if (mask1) {
-        const maskPhone1 = IMask(
-            mask1, {
-            mask: '+{7} (000) 000-00-00'
-        });
-    }
+maskPhone.forEach(function(el) {
+    IMask(el, {
+        mask: '+{7}(000)000-00-00'
+    });
+});
 
+maskDate.forEach(function(el) {
+    IMask(el, {
+        mask: Date,
+        min: new Date(1900, 0, 1),
+        lazy: false
+    });
 });
 
 //////////////////////////////////////////////////////////////////
