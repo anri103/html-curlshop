@@ -1413,7 +1413,7 @@ img {
 }
 
 .section-hero {
-    height: 520px;
+    height: 458px;
 }
 
 .heroSwiper {
@@ -1423,7 +1423,7 @@ img {
 }
 
 .heroSwiper .swiper-pagination {
-    bottom: calc(100% - 2.5rem);
+    bottom: calc(100% - 1.75rem);
     left: calc(1.5rem * 0.5);
     width: auto;
     margin-left: -5px;
@@ -1434,7 +1434,7 @@ img {
     display: flex;
     align-items: start;
     height: 100%;
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 1.375rem;
 }
 
