@@ -1093,6 +1093,10 @@ img {
     text-decoration: none;
 }
 
+.grid-products .card-product {
+    padding-bottom: 60px;
+}
+
 .card-product {
     --bs-link-color: #212121;
     --bs-link-hover-color: #685BC6;
@@ -1141,7 +1145,7 @@ img {
 
 .card-blog .card-img {
     width: 100%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -1166,7 +1170,7 @@ img {
         height: 282px;
     }
     .card-blog .card-img {
-        height: 550px;
+        height: 400px;
     }
     .card-cart-item .card-img {
         height: 146px;
@@ -1483,6 +1487,7 @@ img {
 
 .scrollable-item {
     margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .scrollable-item:last-child {
@@ -1995,21 +2000,17 @@ img {
         display: block;
         color: #212121;
         font-size: 18px;
-        padding: 10px 16px;
+        padding: 6px 12px;
         text-transform: uppercase;
         border: none;
-        border-radius: 0;
         background-color: transparent;
-    }
-
-    .categories-list .categories-link:hover {
-        text-decoration: underline;
     }
     
-    .categories-list .categories-link.active {
-        color: #212121;
-        background-color: transparent;
-        text-decoration: underline;
+    .categories-list .categories-link.active,
+    .categories-list .categories-link:hover {
+        color: #fff;
+        background-color: #212121;
+        border-color: #212121;
     }
 
     .lk-menu .scrollable-wrapper {
