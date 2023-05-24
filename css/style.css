@@ -1939,8 +1939,8 @@ img {
     }
 
     .section-hero {
-        height: calc(100vh - 220px);
-        min-height: 600px;
+        /* height: calc(100vh - 220px); */
+        height: 650px;
     }
 
     .heroSwiper .swiper-pagination {
@@ -2060,7 +2060,12 @@ img {
     }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    .section-hero {
+        height: 767px;
+    }
+}
 
 @media (min-width: 1400px) {
 
