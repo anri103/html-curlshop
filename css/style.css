@@ -1986,11 +1986,6 @@ img {
     .product-info .collapse:not(.show) {
         display: block;
     }
-
-    .categories-list {
-        margin-right: -16px;
-        margin-left: -16px;
-    }
     
     .categories-list .categories-link + .categories-link {
         margin-left: 0;
