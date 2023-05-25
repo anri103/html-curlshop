@@ -625,7 +625,7 @@ textarea {
 }
 
 .btn-wishlist {
-    --btn-icon-size: 12px;
+    --btn-icon-size: 18px;
 }
 
 .btn-lg,
@@ -1105,14 +1105,14 @@ img {
 .btn-wishlist,
 .card-product .badge {
     position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
+    top: 7px;
+    right: 7px;
     z-index: 1;
 }
 
 .card-product .badge {
     right: auto;
-    left: 0.75rem;
+    left: 7px;
 }
 
 .btn-wishlist {
