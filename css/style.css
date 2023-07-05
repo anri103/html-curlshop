@@ -294,6 +294,10 @@ h6, .h6 {
     .fs-lg-24 {
         font-size: 24px;
     }
+
+    .fs-lg-26 {
+        font-size: 26px;
+    }
     
     .fs-lg-28 {
         font-size: 28px;
@@ -1740,6 +1744,38 @@ img {
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.1);
+}
+
+.fancybox__thumbs {
+    --f-thumb-border-radius: 8px;
+}
+
+.fancybox-image {
+    border-radius: 8px;
+}
+
+.fancybox__nav {
+    --f-button-width: 40px;
+    --f-button-height: 40px;
+    --f-button-border: 0;
+    --f-button-border-radius: 10px;
+    --f-button-color: #000;
+    --f-button-hover-color: #fff;
+    --f-button-bg: #fff;
+    --f-button-hover-bg: rgba(255, 255, 255, 0.3);
+    --f-button-active-bg: rgba(24, 24, 27, 0.5);
+    --f-button-shadow: none;
+    --f-button-transition: all 0.15s ease;
+    --f-button-transform: none;
+    --f-button-svg-width: 11px;
+    --f-button-svg-height: 11px;
+    --f-button-svg-stroke-width: 2.5;
+    --f-button-svg-fill: none;
+    --f-button-svg-filter:;
+    --f-button-svg-disabled-opacity: 0.65;
+    --f-button-next-pos: 1rem;
+    --f-button-prev-pos: 1rem;
+    opacity: var(--fancybox-opacity, 1);
 }
 
 /*//////////////////////////////////////////////////////////////////

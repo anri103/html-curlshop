@@ -56,7 +56,16 @@ maskDate.forEach(function(el) {
 // [ Enable Fancybox ]
 
 Fancybox.bind("[data-fancybox]", {
-    // Your custom options
+    Thumbs: {
+        type: "classic",
+    },
+    Toolbar: {
+        display: {
+          left: [],
+          middle: [],
+          right: ["close"],
+        },
+    },
 });
 
 //////////////////////////////////////////////////////////////////
