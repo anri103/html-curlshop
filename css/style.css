@@ -1767,6 +1767,25 @@ img {
     box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.1);
 }
 
+.form_error {
+    color: red;
+    margin-top: 0.25rem;
+    font-size: 0.675em;
+}
+
+.micro-alert {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    padding: 0;
+    font-size: 16px;
+    z-index: 99999
+}
+
+.micro-alert:empty {
+    display: none
+}
+
 .fancybox__thumbs {
     --f-thumb-border-radius: 8px;
 }
