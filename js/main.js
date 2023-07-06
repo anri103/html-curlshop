@@ -15,7 +15,7 @@ const heroSwiper = new Swiper('.heroSwiper', {
 // На shop-item.html
 const thumbsSwiper = new Swiper('.thumbsSwiper', {
     spaceBetween: 8,
-    slidesPerView: 6,
+    slidesPerView: 5,
 });
 const productItemSwiper = new Swiper('.productItemSwiper', {
     slidesPerView: 1.2,
