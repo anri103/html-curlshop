@@ -32,6 +32,31 @@ const productItemSwiper = new Swiper('.productItemSwiper', {
     },
 });
 
+// Похожие товары
+const similarProductSwiper = new Swiper('.similarProductSwiper', {
+    slidesPerView: 2,
+    loop: false,
+    spaceBetween: 9,
+    // autoplay: {
+    //     delay: 3500,
+    //     disableOnInteraction: false,
+    // },
+    navigation: {
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 9,
+        },
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 9,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ PHONE MASK ]
 

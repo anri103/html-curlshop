@@ -540,141 +540,190 @@
                     </div>
 
                     <!-- Сетка товаров -->
-                    <div class="grid-products">
-                        <div class="row g-2 row-cols-2 row-cols-md-3 row-cols-lg-4">
+                    <div class="slider-products">
 
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
-                                    <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Добавить в избранное">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-opacity" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title ff-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Восстанавливающая крем-маска Мята и Лимон</a>
-                                        </p>
-                                        <p class="product-meta fs-10 fs-lg-14 mb-0">Для волнистых и кудрявых волос</p>
-                                    </div>
-                                    <div class="card-footer px-0">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                        <div class="swiper similarProductSwiper">
+                            <div class="swiper-wrapper">
+
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <article class="card card-product h-100">
+                                        <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                        <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="Добавить в избранное">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
+                                                    stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <a class="hover-opacity" href="shop-item.html">
+                                            <img class="card-img" src="img/prod-01.png" alt="">
+                                        </a>
+                                        <div class="card-body px-0">
+                                            <p class="card-title ff-title fs-12 fs-lg-18 fw-700">
+                                                <a href="shop-item.html">Восстанавливающая крем-маска Мята и Лимон</a>
+                                            </p>
+                                            <p class="product-meta fs-10 fs-lg-14 mb-0">Для волнистых и кудрявых волос</p>
                                         </div>
-                                    </div>
-                                </article>
-                            </div>
-    
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <span class="badge fs-10 fs-lg-14 bg-danger">Акция 2 по цене 1</span>
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
-                                    <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Уже в избранном">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-opacity" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title ff-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Кондиционер "Упругие локоны"</a>
-                                        </p>
-                                        <p class="product-meta fs-10 fs-lg-14 mb-0">Для волнистых и кудрявых волос</p>
-                                    </div>
-                                    <div class="card-footer px-0">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                        <div class="card-footer px-0">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
+                                                <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </article>
-                            </div>
-    
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <span class="badge fs-10 fs-lg-14 bg-success">Нет в наличии</span>
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
-                                    <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Уже в избранном">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-opacity" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title ff-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Укрепляющая крем-маска Кокос и Драгон фрукт</a>
-                                        </p>
-                                        <p class="product-meta fs-10 fs-lg-14 mb-0">Для волнистых и кудрявых волос</p>
-                                    </div>
-                                    <div class="card-footer px-0">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                    </article>
+                                </div>
+        
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <article class="card card-product h-100">
+                                        <span class="badge fs-10 fs-lg-14 bg-danger">Акция 2 по цене 1</span>
+                                        <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                        <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="Уже в избранном">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
+                                                    stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <a class="hover-opacity" href="shop-item.html">
+                                            <img class="card-img" src="img/prod-01.png" alt="">
+                                        </a>
+                                        <div class="card-body px-0">
+                                            <p class="card-title ff-title fs-12 fs-lg-18 fw-700">
+                                                <a href="shop-item.html">Кондиционер "Упругие локоны"</a>
+                                            </p>
+                                            <p class="product-meta fs-10 fs-lg-14 mb-0">Для волнистых и кудрявых волос</p>
                                         </div>
-                                    </div>
-                                </article>
-                            </div>
-                            
-                            <!-- Item -->
-                            <div class="col">
-                                <article class="card card-product h-100">
-                                    <span class="badge fs-10 fs-lg-14 bg-info-purple">Снова в наличии</span>
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
-                                    <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" data-bs-title="Добавить в избранное">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
-                                                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hover-opacity" href="shop-item.html">
-                                        <img class="card-img" src="img/prod-01.png" alt="">
-                                    </a>
-                                    <div class="card-body px-0">
-                                        <p class="card-title ff-title fs-12 fs-lg-18 fw-700">
-                                            <a href="shop-item.html">Гель сильной фиксации</a>
-                                        </p>
-                                        <p class="product-meta fs-10 fs-lg-14 mb-0">Для волнистых и кудрявых волос</p>
-                                    </div>
-                                    <div class="card-footer px-0">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                        <div class="card-footer px-0">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
+                                                <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </article>
+                                    </article>
+                                </div>
+        
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <article class="card card-product h-100">
+                                        <span class="badge fs-10 fs-lg-14 bg-success">Нет в наличии</span>
+                                        <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                        <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="Уже в избранном">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
+                                                    stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <a class="hover-opacity" href="shop-item.html">
+                                            <img class="card-img" src="img/prod-01.png" alt="">
+                                        </a>
+                                        <div class="card-body px-0">
+                                            <p class="card-title ff-title fs-12 fs-lg-18 fw-700">
+                                                <a href="shop-item.html">Укрепляющая крем-маска Кокос и Драгон фрукт</a>
+                                            </p>
+                                            <p class="product-meta fs-10 fs-lg-14 mb-0">Для волнистых и кудрявых волос</p>
+                                        </div>
+                                        <div class="card-footer px-0">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
+                                                <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <article class="card card-product h-100">
+                                        <span class="badge fs-10 fs-lg-14 bg-info-purple">Снова в наличии</span>
+                                        <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                        <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="Добавить в избранное">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
+                                                    stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <a class="hover-opacity" href="shop-item.html">
+                                            <img class="card-img" src="img/prod-01.png" alt="">
+                                        </a>
+                                        <div class="card-body px-0">
+                                            <p class="card-title ff-title fs-12 fs-lg-18 fw-700">
+                                                <a href="shop-item.html">Гель сильной фиксации</a>
+                                            </p>
+                                            <p class="product-meta fs-10 fs-lg-14 mb-0">Для волнистых и кудрявых волос</p>
+                                        </div>
+                                        <div class="card-footer px-0">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
+                                                <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <article class="card card-product h-100">
+                                        <span class="badge fs-10 fs-lg-14 bg-danger">Акция 2 по цене 1</span>
+                                        <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                        <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="Уже в избранном">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
+                                                    stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <a class="hover-opacity" href="shop-item.html">
+                                            <img class="card-img" src="img/prod-01.png" alt="">
+                                        </a>
+                                        <div class="card-body px-0">
+                                            <p class="card-title ff-title fs-12 fs-lg-18 fw-700">
+                                                <a href="shop-item.html">Кондиционер "Упругие локоны"</a>
+                                            </p>
+                                            <p class="product-meta fs-10 fs-lg-14 mb-0">Для волнистых и кудрявых волос</p>
+                                        </div>
+                                        <div class="card-footer px-0">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
+                                                <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                
                             </div>
-                            
+                            <div class="swiper-navigation-container">
+                                <div class="swiper-prev">
+                                    <svg width="60" height="6" viewBox="0 0 60 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M-3.8147e-06 3L5 5.88675V0.113249L-3.8147e-06 3ZM60 2.5H4.5V3.5H60V2.5Z" fill="#685BC6"/>
+                                    </svg>
+                                </div>
+                                <div class="swiper-next">
+                                    <svg width="60" height="6" viewBox="0 0 60 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M60 3.00001L55 0.113253L55 5.88676L60 3.00001ZM-4.37114e-08 3.5L55.5 3.5L55.5 2.5L4.37114e-08 2.5L-4.37114e-08 3.5Z" fill="#685BC6"/>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
 
                 </div>

@@ -1304,9 +1304,11 @@ img {
     animation: marquee-left 34s linear infinite;
 }
 
-.marquee-track:hover {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
+@media (min-width: 992px) {
+    .marquee-track:hover {
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
+    }
 }
 
 .marquee-item {
@@ -1862,6 +1864,18 @@ img {
     padding: 15px 20px;
     margin-right: 6px;
     border-radius: 10px;
+}
+
+.similarProductSwiper .swiper-navigation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.similarProductSwiper .swiper-slide {
+    height: auto;
 }
 
 /*//////////////////////////////////////////////////////////////////
