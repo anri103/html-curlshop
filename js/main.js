@@ -62,8 +62,8 @@ Fancybox.bind("[data-fancybox]", {
     Toolbar: {
         display: {
           left: [],
-          middle: [],
-          right: ["close"],
+          middle: ["close"],
+          right: [],
         },
     },
 });

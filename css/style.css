@@ -171,7 +171,7 @@ h6, .h6 {
 }
 @media (min-width: 1200px) {
     h6, .h6 {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
 }
 
@@ -1834,8 +1834,34 @@ img {
     margin-top: 40px;
 }
 
-.product-info p {
+.product-info .tab-pane p {
     margin-bottom: 12px;
+}
+
+.product-info .tab-pane strong,
+.product-info .tab-pane b {
+    font-family: var(--ff-title);
+    font-weight: 500;
+}
+
+.product-info #prod-sostav strong,
+.product-info #prod-sostav b {
+    font-weight: 700;
+}
+
+.product-info #prod-sostav h6 {
+    font-family: var(--ff-title);
+    font-weight: 500;
+}
+
+.promo-input .btn-black {
+    --bs-btn-font-family: "Stolzl Book", sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1;
+    padding: 15px 20px;
+    margin-right: 6px;
+    border-radius: 10px;
 }
 
 /*//////////////////////////////////////////////////////////////////
