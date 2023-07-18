@@ -1835,6 +1835,7 @@ img {
     --f-button-svg-filter: none;
     --f-button-svg-fill: none;
     --f-button-svg-disabled-opacity: 0.65;
+    padding-top: 1rem;
 }
 
 .product-sku {
