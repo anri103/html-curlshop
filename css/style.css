@@ -1813,11 +1813,28 @@ img {
     --f-button-svg-height: 11px;
     --f-button-svg-stroke-width: 2.5;
     --f-button-svg-fill: none;
-    --f-button-svg-filter: ;
+    --f-button-svg-filter: none;
     --f-button-svg-disabled-opacity: 0.65;
     --f-button-next-pos: 1rem;
     --f-button-prev-pos: 1rem;
     opacity: var(--fancybox-opacity, 1);
+}
+
+.fancybox__toolbar {
+    --f-button-width: 40px;
+    --f-button-height: 40px;
+    --f-button-color: #000;
+    --f-button-hover-color: #fff;
+    --f-button-bg: #fff;
+    --f-button-hover-bg: rgba(255, 255, 255, 0.3);
+    --f-button-active-bg: rgba(90, 90, 93, 0.65);
+    --f-button-border-radius: 10px;
+    --f-button-svg-width: 13px;
+    --f-button-svg-height: 13px;
+    --f-button-svg-stroke-width: 1.5;
+    --f-button-svg-filter: none;
+    --f-button-svg-fill: none;
+    --f-button-svg-disabled-opacity: 0.65;
 }
 
 .product-sku {
