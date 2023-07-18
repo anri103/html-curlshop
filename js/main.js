@@ -101,11 +101,52 @@ Fancybox.bind("[data-fancybox]", {
 //////////////////////////////////////////////////////////////////
 // [ Скрываем кнопку "Купить" и показываем выбор количества ]
 
-var buyButtons = document.querySelectorAll('.buy-button');
+// var buyButtons = document.querySelectorAll('.buy-button');
 
-buyButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-        document.querySelector('.number-quantity').classList.add('show');
-        this.style.display = 'none';
+// buyButtons.forEach(function(button) {
+//     button.addEventListener('click', function() {
+//         document.querySelector('.number-quantity').classList.add('show');
+//         this.style.display = 'none';
+//     });
+// });
+
+
+
+// V2
+var addToCartButtons = document.querySelectorAll('.btn-add-to-cart');
+
+addToCartButtons.forEach(function (addToCartButton) {
+    var quantityContainer = addToCartButton.nextElementSibling;
+    var quantityInput = quantityContainer.querySelector('.quantity-input');
+    var minusButton = quantityContainer.querySelector('.minus-button');
+    var plusButton = quantityContainer.querySelector('.plus-button');
+
+    addToCartButton.addEventListener('click', function () {
+        quantityContainer.style.display = 'block';
+        addToCartButton.style.display = 'none';
+    });
+
+    minusButton.addEventListener('click', function () {
+        var currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        } else {
+            quantityContainer.style.display = 'none';
+            addToCartButton.style.display = 'block';
+        }
+    });
+
+    plusButton.addEventListener('click', function () {
+        var currentValue = parseInt(quantityInput.value);
+        quantityInput.value = currentValue + 1;
+    });
+
+    quantityInput.addEventListener('change', function () {
+        var quantity = parseInt(quantityInput.value);
+
+        if (quantity < 1) {
+            quantityContainer.style.display = 'none';
+            addToCartButton.style.display = 'block';
+        }
     });
 });
