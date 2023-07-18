@@ -63,13 +63,13 @@ const similarProductSwiper = new Swiper('.similarProductSwiper', {
 var maskPhone = document.querySelectorAll('.maskPhone')
 var maskDate = document.querySelectorAll('.maskDate')
 
-maskPhone.forEach(function(el) {
+maskPhone.forEach(function (el) {
     IMask(el, {
         mask: '+{7}(000)000-00-00'
     });
 });
 
-maskDate.forEach(function(el) {
+maskDate.forEach(function (el) {
     IMask(el, {
         mask: Date,
         min: new Date(1900, 0, 1),
@@ -86,9 +86,9 @@ Fancybox.bind("[data-fancybox]", {
     },
     Toolbar: {
         display: {
-          left: [],
-          middle: ["close"],
-          right: [],
+            left: [],
+            middle: ["close"],
+            right: [],
         },
     },
 });
@@ -97,3 +97,15 @@ Fancybox.bind("[data-fancybox]", {
 // [ Включаем Bootstrap подсказки ]
 
 [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')).map(function (e) { return new bootstrap.Tooltip(e, { trigger: "hover" }) })
+
+//////////////////////////////////////////////////////////////////
+// [ Скрываем кнопку "Купить" и показываем выбор количества ]
+
+var buyButtons = document.querySelectorAll('.buy-button');
+
+buyButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        document.querySelector('.number-quantity').classList.add('show');
+        this.style.display = 'none';
+    });
+});

@@ -1878,6 +1878,30 @@ img {
     height: auto;
 }
 
+.number-quantity {
+    user-select: none;
+    position: relative;
+    display: none;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.number-quantity.show {
+    display: inline-flex;
+}
+
+.number-input {
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: #fff;
+    outline: none;
+    border: none;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
 

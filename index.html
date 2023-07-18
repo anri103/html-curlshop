@@ -424,7 +424,14 @@
                                     <div class="card-footer px-0">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <span class="card-price fs-12 fs-lg-14">1190 ₽</span>
-                                            <button type="button" class="btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                            <div>
+                                                <button type="button" class="buy-button btn btn-primary fs-12 fs-lg-14">Купить</button>
+                                                <div class="number-quantity">
+                                                    <input class="number-input" type="text" name="count" value="1">
+                                                    <button type="button" class="number-minus">-</button>
+                                                    <button type="button" class="number-plus">+</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </article>
@@ -1308,6 +1315,7 @@
 
     <!-- Scripts -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
     <script src="js/headroom.min.js"></script>
