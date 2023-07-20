@@ -1769,25 +1769,6 @@ img {
     box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.1);
 }
 
-.form_error {
-    color: red;
-    margin-top: 0.25rem;
-    font-size: 0.675em;
-}
-
-.micro-alert {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    padding: 0;
-    font-size: 16px;
-    z-index: 99999
-}
-
-.micro-alert:empty {
-    display: none
-}
-
 .fancybox__thumbs {
     --f-thumb-border-radius: 8px;
 }
@@ -1952,13 +1933,13 @@ img {
     flex: 1 1 auto;
     align-items: center;
     height: 100%;
-    padding: 0 8px 0 0;
+    padding: 0 8px;
     border-right: 1px solid #21212140;
     border-left: 1px solid #21212140;
 }
 
 .quantity-buttons .quantity-input-container > * {
-    width: 50% !important;
+    width: 50%;
 }
 
 .quantity-buttons .quantity-input {
