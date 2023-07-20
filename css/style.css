@@ -1872,6 +1872,11 @@ img {
 .product-info #prod-sostav h6 {
     font-family: var(--ff-title);
     font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.product-info #prod-sostav p {
+    margin-bottom: 10px;
 }
 
 .promo-input .btn-black {
