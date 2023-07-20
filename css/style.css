@@ -1947,7 +1947,7 @@ img {
     flex: 1 1 auto;
     align-items: center;
     height: 100%;
-    padding: 0 8px;
+    padding: 0 8px 0 0;
     border-right: 1px solid #21212140;
     border-left: 1px solid #21212140;
 }
@@ -1973,26 +1973,8 @@ img {
     border: none;
     outline: none;
     background-color: #FBE121;
-}
-
-.card-product .quantity-buttons button {
-    width: 24px;
-}
-
-.product-sku-desc .quantity-buttons button {
-    width: 49px;
-    font-size: 14px;
-}
-
-@media (min-width: 992px) {
-    .card-product .quantity-buttons button {
-        width: 32px;
-    }
-
-    .product-sku-desc .quantity-buttons button {
-        width: 85px;
-        font-size: 24px;
-    }
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .quantity-buttons button:hover {
@@ -2007,6 +1989,44 @@ img {
 .quantity-buttons button.plus-button {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+.card-product .quantity-buttons button {
+    width: 24px;
+    background-size: 8px;
+}
+
+.card-product .quantity-buttons button.minus-button {
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='2' viewBox='0 0 12 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.647858' y1='0.556396' x2='11.6479' y2='0.556396' stroke='black'/%3E%3C/svg%3E%0A");
+}
+
+.card-product .quantity-buttons button.plus-button {
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.647858' y1='5.55634' x2='11.6479' y2='5.55634' stroke='black'/%3E%3Cline x1='6.14789' y1='11.0564' x2='6.14789' y2='0.0563965' stroke='black'/%3E%3C/svg%3E%0A");
+}
+
+.product-sku-desc .quantity-buttons button {
+    width: 49px;
+    background-size: 12px;
+}
+
+.product-sku-desc .quantity-buttons button.minus-button {
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='2' viewBox='0 0 22 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.0625' y1='1.04688' x2='21.0312' y2='1.04688' stroke='black' stroke-width='1.90625'/%3E%3C/svg%3E");
+}
+
+.product-sku-desc .quantity-buttons button.plus-button {
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='8.33248e-08' y1='10.4843' x2='20.9688' y2='10.4843' stroke='black' stroke-width='1.90625'/%3E%3Cline x1='10.4844' y1='20.9687' x2='10.4844' y2='-6.10768e-05' stroke='black' stroke-width='1.90625'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 992px) {
+    .card-product .quantity-buttons button {
+        width: 32px;
+        background-size: 12px;
+    }
+
+    .product-sku-desc .quantity-buttons button {
+        width: 85px;
+        background-size: 21px;
+    }
 }
 
 input::-webkit-outer-spin-button,
