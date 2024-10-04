@@ -1,28 +1,6 @@
-# html-curlshop
-HTML template for Curl Shop
-https://anri103.github.io/html-curlshop/
+# Интернет-магазин для компании «Кудрявый Магазин»
 
-https://anri103.github.io/html-curlshop/404.html  
-https://anri103.github.io/html-curlshop/blog.html  
-https://anri103.github.io/html-curlshop/blog-single.html  
-https://anri103.github.io/html-curlshop/blog-single-02.html  
-https://anri103.github.io/html-curlshop/cart.html  
-https://anri103.github.io/html-curlshop/cart-checkout.html  
-https://anri103.github.io/html-curlshop/catalog.html  
-https://anri103.github.io/html-curlshop/catalog-favorites.html  
-https://anri103.github.io/html-curlshop/certificates.html  
-https://anri103.github.io/html-curlshop/contact.html  
-https://anri103.github.io/html-curlshop/contact-delivery.html  
-https://anri103.github.io/html-curlshop/contact-loyalty.html  
-https://anri103.github.io/html-curlshop/contact-payment.html  
-https://anri103.github.io/html-curlshop/contact-qna.html  
-https://anri103.github.io/html-curlshop/lk-address.html  
-https://anri103.github.io/html-curlshop/lk-bonus.html  
-https://anri103.github.io/html-curlshop/lk-history.html  
-https://anri103.github.io/html-curlshop/lk-notification.html  
-https://anri103.github.io/html-curlshop/lk-notification-single.html  
-https://anri103.github.io/html-curlshop/lk-user.html  
-https://anri103.github.io/html-curlshop/search-results-blog.html  
-https://anri103.github.io/html-curlshop/search-results-catalog.html  
-https://anri103.github.io/html-curlshop/shop-item.html  
-https://anri103.github.io/html-curlshop/shop-item-02.html  
+- Демо: [GitHub Pages](https://anri103.github.io/html-curlshop/index.html)
+- Дизайн: [Figma](https://www.figma.com/design/WXSie4URqjinG1n6jhGDVh/Curl-Shop-2023?node-id=516-329&node-type=canvas&t=njyJDxAeLJ7wVtKY-0)
+- Верстка проекта для CMS OpenCart
+- HTML, CSS, JavaScript, Bootstrap 5
