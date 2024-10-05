@@ -1,12 +1,35 @@
 /*!
-Theme: Curl Shop
-Author: Andrey Galkin
-Version: 1.0
-*/
+ * Theme: Curl Shop
+ * Author: Andrey Galkin
+ * Version: 1.0
+ */
+
+/*------------------------------------------------------------------
+
++ IMPORT FONTS
++ ROOT
++ TYPOGRAPHY
++ LINKS
++ FORMS
++ BUTTONS
++ BASE STYLES
++ ANIMATIONS
+
++ CONTENT
+  + HEADER
+  + MENU
+  + FOOTER
+  + MAIN CONTENT
+
++ PAGES
+  + PAGE INDEX.HTML
+
+-------------------------------------------------------------------*/
 
 /*//////////////////////////////////////////////////////////////////
 [ IMPORT FONTS ]*/
 
+/* https://fontsloader.com/types/stolzl */
 @import url(../fonts/Stolzl/stylesheet.css);
 
 /*//////////////////////////////////////////////////////////////////
@@ -15,12 +38,6 @@ Version: 1.0
 :root {
     --ff-main: "Stolzl Book", sans-serif;
     --ff-title: "Stolzl", sans-serif;
-    --ff-secondary: "Stolzl Book", sans-serif;
-    --fw-light: 300;
-    --fw-regular: 400;
-    --fw-medium: 500;
-    --fw-semibold: 600;
-    --fw-bold: 700;
 
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -175,16 +192,8 @@ h6, .h6 {
     }
 }
 
-.ff-main {
-    font-family: var(--ff-main);
-}
-
 .ff-title {
     font-family: var(--ff-title);
-}
-
-.ff-secondary {
-	font-family: var(--ff-secondary);
 }
 
 .fw-light,
@@ -437,6 +446,10 @@ textarea {
     border-left-width: 0 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
+}
+
+.search-form .form-control:focus {
+    background-color: #fff;
 }
 
 .subscription-form {
@@ -860,14 +873,16 @@ img {
 /*//////////////////////////////////////////////////////////////////
 [ HEADER ]*/
 
-.cms-index-index .page-header {
-    position: relative;
+.page-header {
+    height: 65px;
 }
 
 .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 1030;
     background-color: #fff;
     transition: background-color .2s linear;
 }
@@ -1083,6 +1098,12 @@ img {
 
 .btn-close:focus {
     box-shadow: none;
+}
+
+@media (min-width: 576px) {
+    .modal-sm {
+        --bs-modal-width: 400px;
+    }
 }
 
 /*------------------------------------------------------------------
@@ -1466,6 +1487,8 @@ img {
     margin-top: 12px;
 }
 
+/* PAGE INDEX.HTML */
+
 .section-hero {
     height: 458px;
 }
@@ -1509,6 +1532,57 @@ img {
     --bs-gutter-x: 0;
 }
 
+@media (min-width: 576px) {
+    .section-hero {
+        height: 540px;
+    }
+
+    .heroSwiper {
+        --swiper-pagination-bullet-size: 12px;
+        --swiper-pagination-bullet-horizontal-gap: 10px;
+    }
+
+    .heroSwiper .swiper-pagination {
+        bottom: 1.5rem;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .heroSwiper .swiper-pagination-bullet {
+        border: 1px solid #212121;
+        opacity: 1;
+        background: transparent;
+    }
+
+    .heroSwiper .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #212121;
+    }
+
+    .hero-slide-container {
+        padding-top: 8.5rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-hero {
+        height: 600px;
+    }
+
+    .heroSwiper .swiper-pagination {
+        bottom: 1.75rem;
+    }
+
+    .hero-slide-container {
+        padding-top: 9rem;
+        padding-bottom: 5rem;
+    }
+}
+
+/* PAGE */
+
 .scrollable-container {
     position: relative;
     overflow: hidden;
@@ -1522,7 +1596,6 @@ img {
     align-items: center;
     white-space: nowrap;
     overflow-x: auto;
-    
 }
 
 .scrollable-wrapper::-webkit-scrollbar {
@@ -2072,63 +2145,7 @@ input[type=number] {
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
 
-@media (min-width: 576px) {
-
-    .modal-sm {
-        --bs-modal-width: 400px;
-    }
-
-    .section-hero {
-        height: 540px;
-    }
-
-    .heroSwiper {
-        --swiper-pagination-bullet-size: 12px;
-        --swiper-pagination-bullet-horizontal-gap: 10px;
-    }
-
-    .heroSwiper .swiper-pagination {
-        bottom: 1.5rem;
-        left: 0;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .heroSwiper .swiper-pagination-bullet {
-        border: 1px solid #212121;
-        opacity: 1;
-        background: transparent;
-    }
-
-    .heroSwiper .swiper-pagination-bullet-active {
-        opacity: 1;
-        background: #212121;
-    }
-
-    .hero-slide-container {
-        padding-top: 8.5rem;
-        padding-bottom: 4rem;
-    }
-}
-
-@media (min-width: 768px) {
-
-    .section-hero {
-        height: 600px;
-    }
-
-    .heroSwiper .swiper-pagination {
-        bottom: 1.75rem;
-    }
-
-    .hero-slide-container {
-        padding-top: 9rem;
-        padding-bottom: 5rem;
-    }
-}
-
 @media (min-width: 992px) {
-
     body {
         font-size: var(--bs-body-lg-font-size);
     }
@@ -2183,15 +2200,25 @@ input[type=number] {
         --bs-breadcrumb-font-size: 16px;
     }
 
-    .cms-index-index .page-header {
+    .page-header {
+        height: 75px;
+    }
+
+    .header {
+        position: relative;
+        top: initial;
+        left: initial;
+    }
+
+    .cms-header-transparent .page-header {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: inherit;
+        z-index: 1030;
     }
 
-    .cms-index-index .header {
+    .cms-header-transparent .header {
         background-color: transparent;
     }
 
@@ -2409,14 +2436,12 @@ input[type=number] {
 }
 
 @media (min-width: 1200px) {
-
     .section-hero {
         height: 767px;
     }
 }
 
 @media (min-width: 1400px) {
-
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
         max-width: 1160px;
     }
