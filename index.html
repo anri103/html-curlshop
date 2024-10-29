@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<!-- ВНИМАТЕЛЬНО! класс "cms-header-transparent" задаёт прозрачное меню, без него меню будет обычным, этот класс на некоторых страницах нужно указывать, а на некоторых нет -->
 <body class="cms-home cms-header-transparent">
     <div class="page-wrapper">
 
@@ -29,12 +28,12 @@
                             <img class="logo" src="img/logo.svg" alt="logo curl shop">
                         </a>
 
-                        <!-- Мобильные иконки -->
+                        <!-- Mobile icons -->
                         <div class="d-block d-lg-none">
                             <ul class="list-inline mb-0 d-flex align-items-center">
                                 <li class="list-inline-item">
-                                    <!-- Личный кабинет -->
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                    <!-- Profile icon -->
+                                    <!-- Add "active" to fill svg icon -->
                                     <a class="nav-link p-1" href="#modalAuth1" data-bs-toggle="modal">
                                         <div class="svg-link">
                                             <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,8 +52,8 @@
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <!-- Избранное -->
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                    <!-- Favorite icon -->
+                                    <!-- Add "active" to fill svg icon -->
                                     <a class="nav-link p-1" href="catalog-favorites.html">
                                         <div class="svg-link">
                                             <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,10 +66,10 @@
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <!-- Корзина -->
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                    <!-- Cart icon -->
+                                    <!-- Add "active" to fill svg icon -->
                                     <a class="nav-link p-1 cart-link" href="cart.html">
-                                        <!-- "cart-count" Появляется только если в корзине есть товар(ы) -->
+                                        <!-- "cart-count" display on if cart have some items -->
                                         <div class="cart-count"></div>
                                         <div class="svg-link">
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +82,7 @@
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <!-- Поиск -->
+                                    <!-- Search icon -->
                                     <a class="nav-link p-1" href="#searchForm" data-bs-toggle="offcanvas" aria-controls="searchForm">
                                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="12.2569" cy="12.2566" r="9.36308" stroke="#212121" stroke-width="1.37" stroke-linecap="round" stroke-linejoin="round"></circle>
@@ -140,13 +139,13 @@
                                 </ul>
                             </div>
 
-                            <!-- Десктопные иконки -->
+                            <!-- Desktop icons -->
                             <div class="d-none d-lg-block mt-3 mt-lg-0 ms-lg-3">
                                 <ul class="list-inline mb-0 d-flex align-items-center">
                                     <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         data-bs-title="Личный кабинет">
-                                        <!-- Личный кабинет -->
-                                        <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                        <!-- Profile icon -->
+                                        <!-- Add "active" to fill svg icon -->
                                         <a class="nav-link p-1" href="#modalAuth1" data-bs-toggle="modal">
                                             <div class="svg-link">
                                                 <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -166,8 +165,8 @@
                                     </li>
                                     <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         data-bs-title="Избранное">
-                                        <!-- Избранное -->
-                                        <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                        <!-- Favorite icon -->
+                                        <!-- Add "active" to fill svg icon -->
                                         <a class="nav-link p-1" href="catalog-favorites.html">
                                             <div class="svg-link">
                                                 <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -181,10 +180,10 @@
                                     </li>
                                     <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         data-bs-title="Корзина">
-                                        <!-- Корзина -->
-                                        <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                        <!-- Cart icon -->
+                                        <!-- Add "active" to fill svg icon -->
                                         <a class="nav-link p-1 cart-link" href="cart.html">
-                                            <!-- "cart-count" Появляется только если в корзине есть товар(ы) -->
+                                            <!-- "cart-count" display on if cart have some items -->
                                             <div class="cart-count"></div>
                                             <div class="svg-link">
                                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +197,7 @@
                                     </li>
                                     <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         data-bs-title="Поиск">
-                                        <!-- Поиск -->
+                                        <!-- Search icon -->
                                         <a class="nav-link p-1" href="#searchForm" data-bs-toggle="offcanvas" aria-controls="searchForm">
                                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="12.2569" cy="12.2566" r="9.36308" stroke="#212121" stroke-width="1.37" stroke-linecap="round" stroke-linejoin="round" />
@@ -213,7 +212,7 @@
                     </div>
                 </nav>
 
-                <!-- Декоративная линия под меню -->
+                <!-- Decorative line under the menu -->
                 <div class="d-none d-lg-block">
                     <div class="container">
                         <div style="border-bottom: 1px solid rgba(0, 0, 0, 0.3);"></div>
@@ -226,19 +225,20 @@
         <!-- Main -->
         <main class="main page-main">
 
-            <!-- Главный Слайдер -->
-            <section class="section-hero section">
-                <div class="swiper heroSwiper h-100">
+            <!-- Section Main slider -->
+            <section class="section section-hero-slider">
+                <div class="swiper heroSwiper">
                     <div class="swiper-wrapper">
-
-                        <div class="swiper-slide h-100">
+                        <!-- Item -->
+                        <div class="swiper-slide">
                             <div class="hero-slide-container">
-                                <!-- Картинка для десктопного экрана, в админке сделать возможность ставить разные изображения для разных экранов -->
-                                <img class="hero-slide-bg-img d-none d-md-block" src="img/hero-01.jpg" alt="default alt">
-                                <!-- Картинка для мобильного экрана, в админке сделать возможность ставить разные изображения для разных экранов -->
-                                <img class="hero-slide-bg-img d-md-none" src="img/hero-01-mob.jpg" alt="default alt">
-                                <div class="container h-100">
-                                    <div class="position-relative d-flex flex-column align-items-start justify-content-between justify-content-lg-start h-100 p-0 p-lg-5 py-lg-4"
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="img/hero-01.jpg">
+                                    <source media="(max-width: 767px)" srcset="img/hero-01-mob.jpg">
+                                    <img src="img/hero-01.jpg" alt="Curlshop">
+                                </picture>
+                                <div class="container">
+                                    <div class="position-relative d-flex flex-column align-items-start justify-content-between justify-content-lg-start h-100 py-lg-4 px-lg-5"
                                         style="max-width: 600px;">
                                         <div class="text-white">
                                             <p class="h1 ff-title fw-700">Подарочные наборы</p>
@@ -249,17 +249,18 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swiper-slide h-100">
+                        <!-- Item -->
+                        <div class="swiper-slide">
                             <div class="hero-slide-container">
-                                <!-- Картинка для десктопного экрана, в админке сделать возможность ставить разные изображения для разных экранов -->
-                                <img class="hero-slide-bg-img d-none d-md-block" src="img/hero-02.jpg" alt="default alt">
-                                <!-- Картинка для мобильного экрана, в админке сделать возможность ставить разные изображения для разных экранов -->
-                                <img class="hero-slide-bg-img d-md-none" src="img/hero-02-mob.jpg" alt="default alt">
-                                <div class="container h-100">
-                                    <div class="position-relative d-flex flex-column align-items-start justify-content-between justify-content-lg-start h-100 p-0 p-lg-5 py-lg-4"
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="img/hero-02.jpg">
+                                    <source media="(max-width: 767px)" srcset="img/hero-02-mob.jpg">
+                                    <img src="img/hero-02.jpg" alt="Curlshop">
+                                </picture>
+                                <div class="container">
+                                    <div class="position-relative d-flex flex-column align-items-start justify-content-between justify-content-lg-start h-100 py-lg-4 px-lg-5"
                                         style="max-width: 600px;">
-                                        <div>
+                                        <div class="text-body">
                                             <p class="h1 ff-title fw-700">Кепки для кудрявых</p>
                                             <p class="fs-16 fs-lg-16 mt-2 mt-lg-3">Головной убор специально для<br> объёмных причёсок</p>
                                         </div>
@@ -268,17 +269,18 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swiper-slide h-100">
+                        <!-- Item -->
+                        <div class="swiper-slide">
                             <div class="hero-slide-container">
-                                <!-- Картинка для десктопного экрана, в админке сделать возможность ставить разные изображения для разных экранов -->
-                                <img class="hero-slide-bg-img d-none d-md-block" src="img/hero-03.jpg" alt="default alt">
-                                <!-- Картинка для мобильного экрана, в админке сделать возможность ставить разные изображения для разных экранов -->
-                                <img class="hero-slide-bg-img d-md-none" src="img/hero-03-mob.jpg" alt="default alt">
-                                <div class="container h-100">
-                                    <div class="position-relative d-flex flex-column align-items-start justify-content-between justify-content-lg-start h-100 p-0 p-lg-5 py-lg-4"
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="img/hero-03.jpg">
+                                    <source media="(max-width: 767px)" srcset="img/hero-03-mob.jpg">
+                                    <img src="img/hero-03.jpg" alt="Curlshop">
+                                </picture>
+                                <div class="container">
+                                    <div class="position-relative d-flex flex-column align-items-start justify-content-between justify-content-lg-start h-100 py-lg-4 px-lg-5"
                                         style="max-width: 600px;">
-                                        <div>
+                                        <div class="text-body">
                                             <p class="h1 ff-title fw-700">Подарочные сертификаты</p>
                                             <p class="fs-16 fs-lg-16 mt-2 mt-lg-3">Лучший подарок для вашей<br> кудрявой половинки</p>
                                         </div>
@@ -287,17 +289,18 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swiper-slide h-100">
+                        <!-- Item -->
+                        <div class="swiper-slide">
                             <div class="hero-slide-container">
-                                <!-- Картинка для десктопного экрана, в админке сделать возможность ставить разные изображения для разных экранов -->
-                                <img class="hero-slide-bg-img d-none d-md-block" src="img/hero-04.jpg" alt="default alt">
-                                <!-- Картинка для мобильного экрана, в админке сделать возможность ставить разные изображения для разных экранов -->
-                                <img class="hero-slide-bg-img d-md-none" src="img/hero-04-mob.jpg" alt="default alt">
-                                <div class="container h-100">
-                                    <div class="position-relative d-flex flex-column align-items-start justify-content-between justify-content-lg-start h-100 p-0 p-lg-5 py-lg-4"
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="img/hero-04.jpg">
+                                    <source media="(max-width: 767px)" srcset="img/hero-04-mob.jpg">
+                                    <img src="img/hero-04.jpg" alt="Curlshop">
+                                </picture>
+                                <div class="container">
+                                    <div class="position-relative d-flex flex-column align-items-start justify-content-between justify-content-lg-start h-100 py-lg-4 px-lg-5"
                                         style="max-width: 600px;">
-                                        <div>
+                                        <div class="text-body">
                                             <p class="h1 ff-title fw-700">Кудрявая косметика для мужчин</p>
                                             <p class="fs-16 fs-lg-16 mt-2 mt-lg-3">Новая линейка косметики для<br> кудрявых мужчин</p>
                                         </div>
@@ -306,15 +309,16 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swiper-slide h-100">
+                        <!-- Item -->
+                        <div class="swiper-slide">
                             <div class="hero-slide-container">
-                                <!-- Картинка для десктопного экрана, в админке сделать возможность ставить разные изображения для разных экранов -->
-                                <img class="hero-slide-bg-img d-none d-md-block" src="img/hero-05.jpg" alt="default alt">
-                                <!-- Картинка для мобильного экрана, в админке сделать возможность ставить разные изображения для разных экранов -->
-                                <img class="hero-slide-bg-img d-md-none" src="img/hero-05-mob.jpg" alt="default alt">
-                                <div class="container h-100">
-                                    <div class="position-relative d-flex flex-column align-items-start justify-content-between justify-content-lg-start h-100 p-0 p-lg-5 py-lg-4"
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="img/hero-05.jpg">
+                                    <source media="(max-width: 767px)" srcset="img/hero-05-mob.jpg">
+                                    <img src="img/hero-05.jpg" alt="Curlshop">
+                                </picture>
+                                <div class="container">
+                                    <div class="position-relative d-flex flex-column align-items-start justify-content-between justify-content-lg-start h-100 py-lg-4 px-lg-5"
                                         style="max-width: 600px;">
                                         <div class="text-white">
                                             <p class="h1 ff-title fw-700">На старте кудрявого метода?</p>
@@ -325,59 +329,70 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-
             </section>
 
-            <!-- Наплывающая секция -->
-            <section class="section-marquee section py-5 py-lg-0">
-                <div class="container-lg">
-                    <div class="hero-marquee bg-white rounded-3 p-0 p-lg-5 py-lg-4">
+            <!-- Section Marquee -->
+            <section class="section section-hero-marquee">
+                <div class="container-lg g-0">
+                    <div class="marquee-wrapper bg-white rounded-3 py-lg-4 px-lg-5 pe-lg-0">
                         <div class="row g-0 g-lg-3 align-items-center">
                             <div class="col-lg-3">
                                 <div class="text-center text-lg-start mb-4 mb-lg-0">
                                     <p class="h3 ff-title fw-700">Кудрявый магазин</p>
-                                    <p class="fs-16 fs-lg-10 mb-0">Утюг для волос тебе больше<br>не понадобится. Пришло
-                                        время<br>полюбить свою кудрявую природу!</p>
+                                    <p class="fs-16 fs-lg-10 mb-0">Утюг для волос тебе больше<br>не понадобится. Пришло время<br>полюбить свою кудрявую природу!</p>
                                 </div>
                             </div>
                             <div class="col-lg-9">
                                 <div class="marquee">
                                     <div class="marquee-track">
                                         <div class="d-flex align-items-center">
-                                            <div class="marquee-item"><img src="img/marquee/001.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/001.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/002.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/002.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/003.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/003.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/004.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/004.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/005.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/005.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/006.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/006.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/007.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/007.png" alt="default alt">
                                             </div>
                                         </div>
-                                        <!-- Необходимый для анимации дубль -->
+                                        <!-- Double -->
                                         <div class="d-flex align-items-center">
-                                            <div class="marquee-item"><img src="img/marquee/001.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/001.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/002.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/002.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/003.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/003.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/004.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/004.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/005.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/005.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/006.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/006.png" alt="default alt">
                                             </div>
-                                            <div class="marquee-item"><img src="img/marquee/007.png" alt="default alt">
+                                            <div class="marquee-item">
+                                                <img src="img/marquee/007.png" alt="default alt">
                                             </div>
                                         </div>
                                     </div>
@@ -388,21 +403,19 @@
                 </div>
             </section>
 
-            <!-- Товары -->
+            <!-- Section Products -->
             <section class="section py-5">
                 <div class="container">
                     <div class="text-center mb-5">
                         <h2 class="h2 ff-title fw-500">Товары для кудрявых<br> и волнистых</h2>
                     </div>
-
-                    <!-- Сетка товаров -->
+                    <!-- Products grid -->
                     <div class="grid-products">
                         <div class="row g-2 row-cols-2 row-cols-md-3 row-cols-lg-4">
-
                             <!-- Item -->
                             <div class="col">
-                                <article class="card card-product h-100">
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                <article class="card card-product">
+                                    <!-- Add "active" to button fill svg icon -->
                                     <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
                                         data-bs-placement="bottom" data-bs-title="Добавить в избранное">
                                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
@@ -413,7 +426,7 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                     </button>
-                                    <a class="hover-opacity" href="shop-item.html">
+                                    <a href="shop-item.html" class="hover-opacity">
                                         <img class="card-img" src="img/prod-01.png" alt="">
                                     </a>
                                     <div class="card-body px-0">
@@ -442,12 +455,11 @@
                                     </div>
                                 </article>
                             </div>
-    
                             <!-- Item -->
                             <div class="col">
-                                <article class="card card-product h-100">
+                                <article class="card card-product">
                                     <span class="badge fs-10 fs-lg-14 bg-danger">Акция 2 по цене 1</span>
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                    <!-- Add "active" to button fill svg icon -->
                                     <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
                                         data-bs-placement="bottom" data-bs-title="Уже в избранном">
                                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
@@ -458,7 +470,7 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                     </button>
-                                    <a class="hover-opacity" href="shop-item.html">
+                                    <a href="shop-item.html" class="hover-opacity">
                                         <img class="card-img" src="img/prod-01.png" alt="">
                                     </a>
                                     <div class="card-body px-0">
@@ -487,12 +499,11 @@
                                     </div>
                                 </article>
                             </div>
-    
                             <!-- Item -->
                             <div class="col">
-                                <article class="card card-product h-100">
+                                <article class="card card-product">
                                     <span class="badge fs-10 fs-lg-14 bg-success">Нет в наличии</span>
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                    <!-- Add "active" to button fill svg icon -->
                                     <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
                                         data-bs-placement="bottom" data-bs-title="Уже в избранном">
                                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
@@ -503,7 +514,7 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                     </button>
-                                    <a class="hover-opacity" href="shop-item.html">
+                                    <a href="shop-item.html" class="hover-opacity">
                                         <img class="card-img" src="img/prod-01.png" alt="">
                                     </a>
                                     <div class="card-body px-0">
@@ -532,12 +543,11 @@
                                     </div>
                                 </article>
                             </div>
-                            
                             <!-- Item -->
                             <div class="col">
-                                <article class="card card-product h-100">
+                                <article class="card card-product">
                                     <span class="badge fs-10 fs-lg-14 bg-info-purple">Снова в наличии</span>
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                    <!-- Add "active" to button fill svg icon -->
                                     <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
                                         data-bs-placement="bottom" data-bs-title="Добавить в избранное">
                                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
@@ -548,7 +558,7 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                     </button>
-                                    <a class="hover-opacity" href="shop-item.html">
+                                    <a href="shop-item.html" class="hover-opacity">
                                         <img class="card-img" src="img/prod-01.png" alt="">
                                     </a>
                                     <div class="card-body px-0">
@@ -577,12 +587,11 @@
                                     </div>
                                 </article>
                             </div>
-    
                             <!-- Item -->
                             <div class="col">
-                                <article class="card card-product h-100">
+                                <article class="card card-product">
                                     <span class="badge fs-10 fs-lg-14 bg-info">Предзаказ</span>
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                    <!-- Add "active" to button fill svg icon -->
                                     <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
                                         data-bs-placement="bottom" data-bs-title="Добавить в избранное">
                                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
@@ -593,7 +602,7 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                     </button>
-                                    <a class="hover-opacity" href="shop-item.html">
+                                    <a href="shop-item.html" class="hover-opacity">
                                         <img class="card-img" src="img/prod-01.png" alt="">
                                     </a>
                                     <div class="card-body px-0">
@@ -622,12 +631,11 @@
                                     </div>
                                 </article>
                             </div>
-    
                             <!-- Item -->
                             <div class="col">
-                                <article class="card card-product h-100">
+                                <article class="card card-product">
                                     <span class="badge fs-10 fs-lg-14 bg-warning">Новинка</span>
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                    <!-- Add "active" to button fill svg icon -->
                                     <button class="btn btn-icon btn-wishlist active" type="button" data-bs-toggle="tooltip"
                                         data-bs-placement="bottom" data-bs-title="Уже в избранном">
                                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
@@ -638,7 +646,7 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                     </button>
-                                    <a class="hover-opacity" href="shop-item.html">
+                                    <a href="shop-item.html" class="hover-opacity">
                                         <img class="card-img" src="img/prod-01.png" alt="">
                                     </a>
                                     <div class="card-body px-0">
@@ -667,11 +675,10 @@
                                     </div>
                                 </article>
                             </div>
-    
                             <!-- Item -->
                             <div class="col">
-                                <article class="card card-product h-100">
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                <article class="card card-product">
+                                    <!-- Add "active" to button fill svg icon -->
                                     <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
                                         data-bs-placement="bottom" data-bs-title="Добавить в избранное">
                                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
@@ -682,7 +689,7 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                     </button>
-                                    <a class="hover-opacity" href="shop-item.html">
+                                    <a href="shop-item.html" class="hover-opacity">
                                         <img class="card-img" src="img/prod-01.png" alt="">
                                     </a>
                                     <div class="card-body px-0">
@@ -711,11 +718,10 @@
                                     </div>
                                 </article>
                             </div>
-    
                             <!-- Item -->
                             <div class="col">
-                                <article class="card card-product h-100">
-                                    <!-- Обратить внимание на класс active у кнопки, он закрашивает svg иконку -->
+                                <article class="card card-product">
+                                    <!-- Add "active" to button fill svg icon -->
                                     <button class="btn btn-icon btn-wishlist" type="button" data-bs-toggle="tooltip"
                                         data-bs-placement="bottom" data-bs-title="Добавить в избранное">
                                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
@@ -726,7 +732,7 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                     </button>
-                                    <a class="hover-opacity" href="shop-item.html">
+                                    <a href="shop-item.html" class="hover-opacity">
                                         <img class="card-img" src="img/prod-01.png" alt="">
                                     </a>
                                     <div class="card-body px-0">
@@ -755,17 +761,13 @@
                                     </div>
                                 </article>
                             </div>
-                            
                         </div>
                     </div>
 
-                    <!-- Ссылка на архив -->
-                    <!-- <div class="text-center mt-4 mt-lg-5"> -->
-                    <div class="text-center">
+                    <div class="text-center mt-4 mt-lg-5">
                         <a class="ff-title fs-14 fs-lg-18 purple-link text-decoration-none text-uppercase" href="catalog.html">
                             Перейти в каталог
-                            <svg class="ms-2" width="41" height="6" viewBox="0 0 41 6" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="ms-2" width="41" height="6" viewBox="0 0 41 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M41 3L36 0.113249V5.88675L41 3ZM0 3.5H36.5V2.5H0V3.5Z" fill="currentColor" />
                             </svg>
                         </a>
@@ -784,10 +786,9 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="d-flex flex-column align-items-start p-3 px-lg-5">
-                                    <p class="h3 ff-title fw-500 mb-3">Не забудь про подарочные сертификаты для своей кудрявой половинки
-                                    </p>
+                                    <p class="h3 ff-title fw-500 mb-3">Не забудь про подарочные сертификаты для своей кудрявой половинки</p>
                                     <p class="fs-16">Номиналом: 2000, 5000, 10000 ₽</p>
-                                    <a class="btn btn-primary btn-lg text-uppercase w-100 w-lg-auto px-lg-6 mt-3" href="#">Пошопимся</a>
+                                    <a class="btn btn-primary btn-lg text-uppercase w-100 w-lg-auto px-lg-6 mt-3" href="certificates.html">Пошопимся</a>
                                 </div>
                             </div>
                         </div>
@@ -795,17 +796,15 @@
                 </div>
             </section>
 
-            <!-- Блог -->
+            <!-- Section Blog -->
             <section class="section py-5">
                 <div class="container">
                     <div class="text-center mb-5">
                         <h2 class="h2 ff-title fw-500">Советы для кудрявых<br> и волнистых</h2>
                     </div>
-
-                    <!-- Сетка блога -->
+                    <!-- Blog grid -->
                     <div class="grid-blog">
                         <div class="row g-2 row-cols-1 row-cols-md-3 row-cols-lg-3">
-
                             <!-- Item -->
                             <div class="col">
                                 <article class="card card-blog h-100">
@@ -822,7 +821,6 @@
                                     </div>
                                 </article>
                             </div>
-    
                             <!-- Item -->
                             <div class="col">
                                 <article class="card card-blog h-100">
@@ -839,7 +837,6 @@
                                     </div>
                                 </article>
                             </div>
-    
                             <!-- Item -->
                             <div class="col">
                                 <article class="card card-blog h-100">
@@ -856,16 +853,13 @@
                                     </div>
                                 </article>
                             </div>
-    
                         </div>
                     </div>
-    
-                    <!-- Ссылка на архив -->
+
                     <div class="text-center mt-4 mt-lg-5">
                         <a class="ff-title fs-14 fs-lg-18 purple-link text-decoration-none text-uppercase" href="blog.html">
                             Читать больше
-                            <svg class="ms-2" width="41" height="6" viewBox="0 0 41 6" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="ms-2" width="41" height="6" viewBox="0 0 41 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M41 3L36 0.113249V5.88675L41 3ZM0 3.5H36.5V2.5H0V3.5Z" fill="currentColor" />
                             </svg>
                         </a>
@@ -874,14 +868,13 @@
                 </div>
             </section>
 
-            <!-- Подписка -->
-            <section class="section py-5">
+            <!-- Section Subscribe -->
+            <section class="section py-5" id="form-subscribe">
                 <div class="container">
                     <div class="mx-auto" style="max-width: 784px;">
                         <div class="text-center mb-5">
                             <h2 class="h2 ff-title fw-500">Новости о скидках до 50% получают те, кто подписался!</h2>
                         </div>
-
                         <form class="subscription-form" action="#" method="post">
                             <label class="form-label d-none">email</label>
                             <input type="email" class="form-control form-control-lg" placeholder="Введите email">
@@ -894,9 +887,8 @@
         </main>
 
         <!-- Footer -->
-        <footer class="footer py-5 page-footer">
-
-            <!-- desktop footer -->
+        <footer class="footer py-5">
+            <!-- Desktop footer -->
             <div class="footer-desktop d-none d-lg-block">
                 <div class="container">
                     <div class="row g-3">
@@ -998,8 +990,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- mobile footer -->
+            <!-- Mobile footer -->
             <div class="footer-mobile d-lg-none">
                 <div class="container">
                     <div class="row g-0">
@@ -1106,301 +1097,297 @@
                     </div>
                 </div>
             </div>
-
         </footer>
 
     </div>
 
-    <!-- Modals -->
-    <div class="modals-wrapper">
+    <!-- MODALS -->
 
-        <!-- Модалка расчета доставки -->
-        <!-- ТОЛЬКО ДЛЯ ДЕМОНСТРАЦИИ КЛИЕНТУ -->
-        <div class="modal fade" id="modalProdDelivery" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Модалка расчета доставки -->
+    <!-- ТОЛЬКО ДЛЯ ДЕМОНСТРАЦИИ КЛИЕНТУ! -->
+    <div class="modal fade" id="modalProdDelivery" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-lg-5 pb-lg-5">
+                    <div class="d-flex align-items-center">
+                        <span class="h5 fw-400 mb-0">Выберите город</span>
+                        <span class="ms-3">|</span>
+                        <select class="form-select ms-3" style="max-width: 160px;">
+                            <option selected="">Россия</option>
+                            <option value="1">Узбекистан</option>
+                            <option value="2">Беларусь</option>
+                            <option value="3">Украина</option>
+                            <option value="4">США</option>
+                        </select>
                     </div>
-                    <div class="modal-body px-lg-5 pb-lg-5">
-                        <div class="d-flex align-items-center">
-                            <span class="h5 fw-400 mb-0">Выберите город</span>
-                            <span class="ms-3">|</span>
-                            <select class="form-select ms-3" style="max-width: 160px;">
-                                <option selected="">Россия</option>
-                                <option value="1">Узбекистан</option>
-                                <option value="2">Беларусь</option>
-                                <option value="3">Украина</option>
-                                <option value="4">США</option>
-                            </select>
+                    <div class="mt-4">
+                        <input class="form-control" type="text" placeholder="г Королёв, Московская обл.">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модалка размеров одежды -->
+    <div class="modal fade" id="modalProdSizes" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #f6f6f6;">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="p-lg-2">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-lg-4 order-lg-2">
+                                <img class="mx-auto" src="img/prod-size-table-01.png" alt="" style="max-height: 220px;">
+                            </div>
+                            <div class="col-lg-8 order-lg-1">
+                                <img src="img/prod-size-table-02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Форма поиска -->
+    <div class="offcanvas offcanvas-top offcanvas-search" id="searchForm" tabindex="-1">
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="py-3">
+                    <div class="row g-3">
+                        <div class="col-lg-2 d-none d-lg-block">
+                            <img class="mt-2" src="img/logo.svg" alt="logo">
+                        </div>
+                        <div class="col-lg-10">
+                            <form class="search-form" action="#">
+                                <div class="position-relative d-flex align-items-center">
+                                    <input type="text" class="form-control px-0" placeholder="Найти">
+                                    <button type="submit"
+                                        class="btn p-1 border-0 position-absolute top-50 end-0 translate-middle-y z-index-5 me-5">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.2569" cy="12.2566" r="9.36308" stroke="#212121"
+                                                stroke-width="1.37" stroke-linecap="round" stroke-linejoin="round">
+                                            </circle>
+                                            <path d="M18.7691 19.2549L22.4399 22.9162" stroke="#212121"
+                                                stroke-width="1.37" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <button type="button"
+                                        class="btn p-1 border-0 position-absolute top-50 end-0 translate-middle-y z-index-5"
+                                        data-bs-dismiss="offcanvas" aria-label="Close">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 1.33126L1.18451 21.3311M20.8155 21.3309L1 1.33105"
+                                                stroke="#212121" stroke-width="1.28" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="mt-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="searchInShop">
+                                        <label class="form-check-label" for="searchInShop">Искать в товарах</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="searchInBlog">
+                                        <label class="form-check-label" for="searchInBlog">Искать в блоге</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Auth Step 1 -->
+    <!-- Обратить внимание на кнопки button type="button" и переходы на модальные окна! -->
+    <div class="modal fade" id="modalAuth1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="py-4 px-3">
+                        <div class="text-center">
+                            <div class="ff-title fs-22 fs-lg-24 fw-500 mb-4">Вход в личный кабинет</div>
+                            <div class="fs-16 fs-lg-18 mb-3">Введите номер телефона.<br>Мы отправим Вам код в СМС</div>
+                        </div>
+                        <form action="#" class="mt-4">
+                            <div class="mb-3">
+                                <label for="auth-phone" class="d-none">Телефон</label>
+                                <input type="text" class="form-control form-control-lg maskPhone" id="auth-phone"
+                                    placeholder="+ 7 999 999 99 99">
+                            </div>
+                            <!-- У кнопки type="button" только для демонстрации перехода на следующий шаг регистрации -->
+                            <button type="button" class="btn btn-primary btn-lg text-uppercase w-100" data-bs-target="#modalAuth2" data-bs-toggle="modal">Получить
+                                код</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Auth Step 2 -->
+    <!-- Обратить внимание на кнопки button type="button" и переходы на модальные окна! -->
+    <div class="modal fade" id="modalAuth2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="py-4 px-3">
+                        <div class="text-center">
+                            <div class="ff-title fs-22 fs-lg-24 fw-500 mb-4">Введите код</div>
+                            <div class="fs-16 fs-lg-18 mb-3">Отправили код в СМС по номеру</div>
+                            <!-- Сюда подставляется номер из шага 1 -->
+                            <div class="fs-16 fs-lg-18 mb-3">+7 962 969 28 88</div>
+                            <!-- Возвращаемся на предыдущий шаг -->
+                            <div class="fs-16 fs-lg-18 mb-3"><a class="purple-link text-decoration-none" href="#modalAuth1" data-bs-toggle="modal">Изменить</a></div>
+                        </div>
+                        <form action="#" class="mt-4">
+                            <div class="mb-3">
+                                <label for="auth-sms" class="d-none">SMS</label>
+                                <input type="text" class="form-control form-control-lg" id="auth-sms">
+                            </div>
+                            <!-- У кнопки type="button" только для демонстрации перехода на следующий шаг регистрации -->
+                            <button type="button" class="btn btn-primary btn-lg text-uppercase w-100" data-bs-target="#modalSignUp1" data-bs-toggle="modal">Войти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Auth Step 3 -->
+    <!-- Обратить внимание на кнопки и переходы на модальные окна! -->
+    <div class="modal fade" id="modalAuth3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="py-4 px-3">
+                        <div class="text-center">
+                            <div class="ff-title fs-22 fs-lg-24 fw-500 mb-4">Номер телефона<br>подтверждён</div>
+                            <div class="fs-16 fs-lg-18 mb-3">Ознакомиться с продуктами Curl Rock and Roll можно в каталоге. Приятного шопинга!</div>
                         </div>
                         <div class="mt-4">
-                            <input class="form-control" type="text" placeholder="г Королёв, Московская обл.">
+                            <a class="btn btn-primary btn-lg text-uppercase w-100" href="catalog.html">Перейти в каталог</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Модалка размеров одежды -->
-        <div class="modal fade" id="modalProdSizes" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content" style="background-color: #f6f6f6;">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="p-lg-2">
-                            <div class="row g-3 align-items-center">
-                                <div class="col-lg-4 order-lg-2">
-                                    <img class="mx-auto" src="img/prod-size-table-01.png" alt="" style="max-height: 220px;">
+    <!-- Modal Sign up Step 1 -->
+    <!-- Обратить внимание на кнопки button type="button" и переходы на модальные окна! -->
+    <div class="modal fade" id="modalSignUp1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="py-4 px-3">
+                        <div class="text-center">
+                            <div class="ff-title fs-22 fs-lg-24 fw-500 mb-4">Заполните все поля<br> ниже и получите</div>
+                            <div class="fs-16 fs-lg-18 mb-3">
+                                <span class="ff-title">скидку 10%</span> на первый заказ
+                                
+                                <!-- Подсказка -->
+                                <div class="d-inline-block ms-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM8.93 6.588L7.93 11.293C7.86 11.633 7.959 11.826 8.234 11.826C8.428 11.826 8.721 11.756 8.92 11.58L8.832 11.996C8.545 12.342 7.912 12.594 7.367 12.594C6.664 12.594 6.365 12.172 6.559 11.275L7.297 7.807C7.361 7.514 7.303 7.408 7.01 7.337L6.559 7.256L6.641 6.875L8.93 6.588ZM8 5.5C7.73478 5.5 7.48043 5.39464 7.29289 5.20711C7.10536 5.01957 7 4.76522 7 4.5C7 4.23478 7.10536 3.98043 7.29289 3.79289C7.48043 3.60536 7.73478 3.5 8 3.5C8.26522 3.5 8.51957 3.60536 8.70711 3.79289C8.89464 3.98043 9 4.23478 9 4.5C9 4.76522 8.89464 5.01957 8.70711 5.20711C8.51957 5.39464 8.26522 5.5 8 5.5Z" fill="#CCCCCC"/>
+                                    </svg>
                                 </div>
-                                <div class="col-lg-8 order-lg-1">
-                                    <img src="img/prod-size-table-02.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Форма поиска -->
-        <div class="offcanvas offcanvas-top offcanvas-search" id="searchForm" tabindex="-1">
-            <div class="offcanvas-body">
-                <div class="container">
-                    <div class="py-3">
-                        <div class="row g-3">
-                            <div class="col-lg-2 d-none d-lg-block">
-                                <img class="mt-2" src="img/logo.svg" alt="logo">
-                            </div>
-                            <div class="col-lg-10">
-                                <form class="search-form" action="#">
-                                    <div class="position-relative d-flex align-items-center">
-                                        <input type="text" class="form-control px-0" placeholder="Найти">
-                                        <button type="submit"
-                                            class="btn p-1 border-0 position-absolute top-50 end-0 translate-middle-y z-index-5 me-5">
-                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="12.2569" cy="12.2566" r="9.36308" stroke="#212121"
-                                                    stroke-width="1.37" stroke-linecap="round" stroke-linejoin="round">
-                                                </circle>
-                                                <path d="M18.7691 19.2549L22.4399 22.9162" stroke="#212121"
-                                                    stroke-width="1.37" stroke-linecap="round" stroke-linejoin="round">
-                                                </path>
-                                            </svg>
-                                        </button>
-                                        <button type="button"
-                                            class="btn p-1 border-0 position-absolute top-50 end-0 translate-middle-y z-index-5"
-                                            data-bs-dismiss="offcanvas" aria-label="Close">
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M21 1.33126L1.18451 21.3311M20.8155 21.3309L1 1.33105"
-                                                    stroke="#212121" stroke-width="1.28" />
-                                            </svg>
-                                        </button>
+                                <div class="dropdown-menu custom-tooltip">
+                                    <div class="custom-tooltip-body fs-14 fs-lg-18">
+                                        <p class="mb-3">Приветственный бонус от CURL ROCK AND ROLL <span class="ff-title">– это 10% на первую покупку</span> на обновлённом сайте curlshop.ru</p>
+                                        <p class="mb-3"><span class="ff-title">Срок действия:</span> 1 месяц с момента регистрации</p>
+                                        <p class="mb-3"><span class="ff-title">Условия применения:</span> распространяется на все продукты кроме наборов и сертификатов</p>
+                                        <p class="mb-3">После регистрации <span class="ff-title">вы получите промокод на почту</span>. Также он будет отображаться в личном кабинете. Приятного шопинга!</p>
                                     </div>
-                                    <div class="mt-3">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="searchInShop">
-                                            <label class="form-check-label" for="searchInShop">Искать в товарах</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="searchInBlog">
-                                            <label class="form-check-label" for="searchInBlog">Искать в блоге</label>
-                                        </div>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Auth Step 1 -->
-        <!-- Обратить внимание на кнопки button type="button" и переходы на модальные окна! -->
-        <div class="modal fade" id="modalAuth1" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-sm">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="py-4 px-3">
-                            <div class="text-center">
-                                <div class="ff-title fs-22 fs-lg-24 fw-500 mb-4">Вход в личный кабинет</div>
-                                <div class="fs-16 fs-lg-18 mb-3">Введите номер телефона.<br>Мы отправим Вам код в СМС</div>
+                        <form action="#" class="mt-4">
+                            <div class="mb-3">
+                                <label for="signup-email" class="d-none">E-mail</label>
+                                <input type="text" class="form-control form-control-lg" id="signup-email" placeholder="E-mail">
                             </div>
-                            <form action="#" class="mt-4">
-                                <div class="mb-3">
-                                    <label for="auth-phone" class="d-none">Телефон</label>
-                                    <input type="text" class="form-control form-control-lg maskPhone" id="auth-phone"
-                                        placeholder="+ 7 999 999 99 99">
+                            <div class="mb-3">
+                                <label for="signup-firstname" class="d-none">Имя</label>
+                                <input type="text" class="form-control form-control-lg" id="signup-firstname" placeholder="Имя">
+                            </div>
+                            <div class="mb-3">
+                                <label for="signup-lastname" class="d-none">Фамилия</label>
+                                <input type="text" class="form-control form-control-lg" id="signup-lastname" placeholder="Фамилия">
+                            </div>
+                            <div class="mb-3">
+                                <label for="signup-birthdate" class="d-none">Дата рождения</label>
+                                <input type="text" class="form-control form-control-lg maskDate" id="signup-birthdate" placeholder="Дата рождения">
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="radio" name="signup-gender" id="signup-female">
+                                        <label class="form-check-label" for="signup-female">Женщина</label>
+                                    </div>
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="radio" name="signup-gender" id="signup-male">
+                                        <label class="form-check-label" for="signup-male">Мужчина</label>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="mb-3">
                                 <!-- У кнопки type="button" только для демонстрации перехода на следующий шаг регистрации -->
-                                <button type="button" class="btn btn-primary btn-lg text-uppercase w-100" data-bs-target="#modalAuth2" data-bs-toggle="modal">Получить
-                                    код</button>
-                            </form>
+                                <button type="button" class="btn btn-primary btn-lg text-uppercase w-100" data-bs-target="#modalSignUp2" data-bs-toggle="modal">Получить скидку</button>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="signup-agree1" checked>
+                                    <label class="form-check-label fs-14" for="signup-agree1">
+                                        Даю согласие на обработку персональных данных
+                                    </label>
+                                    <div class="text-gray fs-10 fs-lg-12">Настоящим подтверждаю, что я ознакомлен/а и согласен/а с условиями <a href="#">оферты и политики конфиденциальности</a></div>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="signup-agree2">
+                                    <label class="form-check-label fs-14" for="signup-agree2">
+                                        Даю согласие на рассылку рекламных и информационных материалов
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="text-center mt-3 pt-3">
+                            <a class="purple-link ff-title fs-16 fs-lg-18 text-decoration-none text-uppercase" href="#modalAuth3" data-bs-toggle="modal">Продолжить <br>и пропустить бонус</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modal Auth Step 2 -->
-        <!-- Обратить внимание на кнопки button type="button" и переходы на модальные окна! -->
-        <div class="modal fade" id="modalAuth2" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-sm">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="py-4 px-3">
-                            <div class="text-center">
-                                <div class="ff-title fs-22 fs-lg-24 fw-500 mb-4">Введите код</div>
-                                <div class="fs-16 fs-lg-18 mb-3">Отправили код в СМС по номеру</div>
-                                <!-- Сюда подставляется номер из шага 1 -->
-                                <div class="fs-16 fs-lg-18 mb-3">+7 962 969 28 88</div>
-                                <!-- Возвращаемся на предыдущий шаг -->
-                                <div class="fs-16 fs-lg-18 mb-3"><a class="purple-link text-decoration-none" href="#modalAuth1" data-bs-toggle="modal">Изменить</a></div>
-                            </div>
-                            <form action="#" class="mt-4">
-                                <div class="mb-3">
-                                    <label for="auth-sms" class="d-none">SMS</label>
-                                    <input type="text" class="form-control form-control-lg" id="auth-sms">
-                                </div>
-                                <!-- У кнопки type="button" только для демонстрации перехода на следующий шаг регистрации -->
-                                <button type="button" class="btn btn-primary btn-lg text-uppercase w-100" data-bs-target="#modalSignUp1" data-bs-toggle="modal">Войти</button>
-                            </form>
+    <!-- Modal Sign up Step 2 -->
+    <!-- Обратить внимание на кнопки и переходы на модальные окна! -->
+    <div class="modal fade" id="modalSignUp2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="py-4 px-3">
+                        <div class="text-center">
+                            <p class="ff-title fs-22 fs-lg-24 fw-500 mb-4">Регистрация прошла<br>успешно!</p>
+                            <p>Скидка 10% автоматически применится при оформлении первого заказа. Приятного шоппинга!</p>
+                        </div>
+                        <div class="mt-4">
+                            <a class="btn btn-primary btn-lg text-uppercase w-100" href="catalog.html">Перейти в каталог</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Modal Auth Step 3 -->
-        <!-- Обратить внимание на кнопки и переходы на модальные окна! -->
-        <div class="modal fade" id="modalAuth3" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-sm">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="py-4 px-3">
-                            <div class="text-center">
-                                <div class="ff-title fs-22 fs-lg-24 fw-500 mb-4">Номер телефона<br>подтверждён</div>
-                                <div class="fs-16 fs-lg-18 mb-3">Ознакомиться с продуктами Curl Rock and Roll можно в каталоге. Приятного шопинга!</div>
-                            </div>
-                            <div class="mt-4">
-                                <a class="btn btn-primary btn-lg text-uppercase w-100" href="catalog.html">Перейти в каталог</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Sign up Step 1 -->
-        <!-- Обратить внимание на кнопки button type="button" и переходы на модальные окна! -->
-        <div class="modal fade" id="modalSignUp1" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-sm">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="py-4 px-3">
-                            <div class="text-center">
-                                <div class="ff-title fs-22 fs-lg-24 fw-500 mb-4">Заполните все поля<br> ниже и получите</div>
-                                <div class="fs-16 fs-lg-18 mb-3">
-                                    <span class="ff-title">скидку 10%</span> на первый заказ
-                                    
-                                    <!-- Подсказка -->
-                                    <div class="d-inline-block ms-2" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM8.93 6.588L7.93 11.293C7.86 11.633 7.959 11.826 8.234 11.826C8.428 11.826 8.721 11.756 8.92 11.58L8.832 11.996C8.545 12.342 7.912 12.594 7.367 12.594C6.664 12.594 6.365 12.172 6.559 11.275L7.297 7.807C7.361 7.514 7.303 7.408 7.01 7.337L6.559 7.256L6.641 6.875L8.93 6.588ZM8 5.5C7.73478 5.5 7.48043 5.39464 7.29289 5.20711C7.10536 5.01957 7 4.76522 7 4.5C7 4.23478 7.10536 3.98043 7.29289 3.79289C7.48043 3.60536 7.73478 3.5 8 3.5C8.26522 3.5 8.51957 3.60536 8.70711 3.79289C8.89464 3.98043 9 4.23478 9 4.5C9 4.76522 8.89464 5.01957 8.70711 5.20711C8.51957 5.39464 8.26522 5.5 8 5.5Z" fill="#CCCCCC"/>
-                                        </svg>
-                                    </div>
-                                    <div class="dropdown-menu custom-tooltip">
-                                        <div class="custom-tooltip-body fs-14 fs-lg-18">
-                                            <p class="mb-3">Приветственный бонус от CURL ROCK AND ROLL <span class="ff-title">– это 10% на первую покупку</span> на обновлённом сайте curlshop.ru</p>
-                                            <p class="mb-3"><span class="ff-title">Срок действия:</span> 1 месяц с момента регистрации</p>
-                                            <p class="mb-3"><span class="ff-title">Условия применения:</span> распространяется на все продукты кроме наборов и сертификатов</p>
-                                            <p class="mb-3">После регистрации <span class="ff-title">вы получите промокод на почту</span>. Также он будет отображаться в личном кабинете. Приятного шопинга!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <form action="#" class="mt-4">
-                                <div class="mb-3">
-                                    <label for="signup-email" class="d-none">E-mail</label>
-                                    <input type="text" class="form-control form-control-lg" id="signup-email" placeholder="E-mail">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="signup-firstname" class="d-none">Имя</label>
-                                    <input type="text" class="form-control form-control-lg" id="signup-firstname" placeholder="Имя">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="signup-lastname" class="d-none">Фамилия</label>
-                                    <input type="text" class="form-control form-control-lg" id="signup-lastname" placeholder="Фамилия">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="signup-birthdate" class="d-none">Дата рождения</label>
-                                    <input type="text" class="form-control form-control-lg maskDate" id="signup-birthdate" placeholder="Дата рождения">
-                                </div>
-                                <div class="mb-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="form-check me-4">
-                                            <input class="form-check-input" type="radio" name="signup-gender" id="signup-female">
-                                            <label class="form-check-label" for="signup-female">Женщина</label>
-                                        </div>
-                                        <div class="form-check me-4">
-                                            <input class="form-check-input" type="radio" name="signup-gender" id="signup-male">
-                                            <label class="form-check-label" for="signup-male">Мужчина</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <!-- У кнопки type="button" только для демонстрации перехода на следующий шаг регистрации -->
-                                    <button type="button" class="btn btn-primary btn-lg text-uppercase w-100" data-bs-target="#modalSignUp2" data-bs-toggle="modal">Получить скидку</button>
-                                </div>
-                                <div class="mb-3">
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="checkbox" value="" id="signup-agree1" checked>
-                                        <label class="form-check-label fs-14" for="signup-agree1">
-                                            Даю согласие на обработку персональных данных
-                                        </label>
-                                        <div class="text-gray fs-10 fs-lg-12">Настоящим подтверждаю, что я ознакомлен/а и согласен/а с условиями <a href="#">оферты и политики конфиденциальности</a></div>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="checkbox" value="" id="signup-agree2">
-                                        <label class="form-check-label fs-14" for="signup-agree2">
-                                            Даю согласие на рассылку рекламных и информационных материалов
-                                        </label>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <div class="text-center mt-3 pt-3">
-                                <a class="purple-link ff-title fs-16 fs-lg-18 text-decoration-none text-uppercase" href="#modalAuth3" data-bs-toggle="modal">Продолжить <br>и пропустить бонус</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Sign up Step 2 -->
-        <!-- Обратить внимание на кнопки и переходы на модальные окна! -->
-        <div class="modal fade" id="modalSignUp2" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-sm">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="py-4 px-3">
-                            <div class="text-center">
-                                <p class="ff-title fs-22 fs-lg-24 fw-500 mb-4">Регистрация прошла<br>успешно!</p>
-                                <p>Скидка 10% автоматически применится при оформлении первого заказа. Приятного шоппинга!</p>
-                            </div>
-                            <div class="mt-4">
-                                <a class="btn btn-primary btn-lg text-uppercase w-100" href="catalog.html">Перейти в каталог</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <!-- Scripts -->
