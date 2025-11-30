@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------
+[ breadcrumb ]*/
+
+.breadcrumb {
+    --bs-breadcrumb-font-size: 12px;
+    --bs-breadcrumb-margin-bottom: 0;
+    --bs-breadcrumb-item-active-color: #212121;
+    display: block;
+}
+
+.breadcrumb-item {
+    display: inline;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: inherit;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    .breadcrumb {
+        --bs-breadcrumb-font-size: 16px;
+    }
+}

@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------
+[ modals ]*/
+
+.modal {
+    --bs-modal-padding: 1rem;
+    --bs-modal-header-border-width: 0;
+    --bs-modal-header-padding: 1rem 1rem;
+    --bs-modal-border-width: 0;
+    --bs-modal-border-radius: 20px;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+@media (min-width: 576px) {
+    .modal-sm {
+        --bs-modal-width: 400px;
+    }
+}
+
+// offcanvas
+
+.offcanvas-search {
+    --bs-offcanvas-height: fit-content;
+    --bs-offcanvas-padding-x: 0;
+    --bs-offcanvas-padding-y: 0;
+}

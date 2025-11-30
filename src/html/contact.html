@@ -1,0 +1,71 @@
+@@include('partials/header.html', {
+    "title": "Контакты",
+    "bodyClass": "cms-page"
+})
+
+<!-- Main -->
+<main class="main page-main">
+
+    <!-- section-breadcrumb -->
+    <section class="section py-3 pb-4 pb-lg-0">
+        <div class="container">
+            <nav class="d-flex" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-content -->
+    <section class="section py-1 pb-5 py-lg-5">
+        <div class="container">
+            <h1 class="h1 fw-400 mb-4 mb-lg-5">Контакты</h1>
+            <!-- Новый блок -->
+            <div class="mb-5">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <p class="ff-title fw-500 mb-3">Режим работы магазина в праздничные дни:</p>
+                        <p>08.05.2023 г.-11.05.2023 г. - выходные дни<br> с 12.05.2023 г. - в обычном режиме</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Заказы, оформленные после 15:00 07.05.2023 г.<br> и выходные дни, будут приняты в обработку 12.05.2023 г.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-lg-3">
+                <div class="col">
+                    <p class="ff-title fw-500 mb-3">Режим работы магазина:</p>
+                    <p>по будням с 10:00 до 19:00</p>
+                </div>
+                <div class="col">
+                    <p class="ff-title fw-500 mb-3">Контакты:</p>
+                    <p><a class="black-link text-decoration-none" href="tel:+74995179771">+7 (499) 517-97-71</a><br>
+                        <a class="black-link text-decoration-none" href="tel:+79776982488">+7 (977) 698-24-88</a></p>
+                    <p class="ff-title fw-500 mb-3">Написать нам на почту:</p>
+                    <p><a class="purple-link text-decoration-none" href="mailto:order@curlshop.ru">order@curlshop.ru</a></p>
+                </div>
+                <div class="col">
+                    <p class="ff-title fw-500 mb-3">Пункт самовывоза:</p>
+                    <p>г. Москва, м. Алексеевская, Проспект Мира 102/с34 (салон для кудрявых TWIST).
+                        Вход с Дроболитейного переулка.</p>
+                </div>
+            </div>
+            <div class="contact-map mt-5">
+                <div class="text-center mb-4 mx-auto" style="max-width: 960px;">
+                    <p class="ff-title fw-500 mb-3">Обращаем ваше внимание на то, что забрать свой заказ вы можете только после получения уведомления о его готовности.</p>
+                </div>
+                <!-- Зделать возможность вставки кода Яндекс Карты -->
+                <img class="img-fluid w-100" src="img/contact/contact-map.png" alt="...">
+            </div>
+        </div>
+    </section>
+
+    <!-- section-subscription -->
+    @@include('partials/section-subscription.html')
+
+</main>
+
+<!-- Footer -->
+@@include('partials/footer.html')

@@ -1,0 +1,54 @@
+/*------------------------------------------------------------------
+[ footer ]*/
+
+.footer {
+    --bs-link-color: #212121;
+    --bs-link-hover-color: #685BC6;
+    position: sticky;
+  	top: 100vh;
+	padding: 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer-desktop .logo,
+.footer-mobile .logo {
+    width: 170px;
+}
+
+.btn-scroll-top {
+    --btn-icon-size: 3.25rem;
+    --bs-btn-font-size: 1.5rem;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #212327;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #212327;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #212327;
+    --bs-btn-active-border-color: transparent;
+    position: fixed;
+    right: 1.25rem;
+    bottom: -5rem;
+    opacity: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, bottom .4s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity .3s;
+    z-index: 999;
+}
+
+.btn-scroll-top.show {
+	right: 1.25rem;
+    bottom: 6.5rem;
+    opacity: 1;
+}
+
+.btn-call-back {
+	--btn-icon-size: 3.25rem;
+    position: fixed;
+    right: 1.25rem;
+    bottom: 11.5rem;
+    z-index: 999;
+	animation: hoverWave linear 1.2s infinite;
+}

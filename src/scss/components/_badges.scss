@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------
+[ badges ]*/
+
+.badge {
+    --bs-badge-padding-x: 0.375em;
+    --bs-badge-padding-y: 0.25em;
+    --bs-badge-font-size: 0.875em;
+    --bs-badge-font-weight: 400;
+    --bs-badge-color: #fff;
+    --bs-badge-border-radius: 0.25rem;
+    font-family: var(--theme-ff-title);
+    text-transform: uppercase;
+}
+
+.bg-info-purple {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-info-purple-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.grid-products .d-grid {
+    row-gap: 60px !important;
+}

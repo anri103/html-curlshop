@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------
+[ dropdowns ]*/
+
+.dropdown-toggle::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: transparent url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 4.36328L6 8.72692L1 4.36328' stroke='%23212121' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px auto no-repeat;
+    vertical-align: middle !important;
+    border: none !important;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-toggle.show::after {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    --bs-dropdown-zindex: 1000;
+    --bs-dropdown-min-width: 12rem;
+    --bs-dropdown-padding-x: 0;
+    --bs-dropdown-padding-y: 0.5rem;
+    --bs-dropdown-spacer: 0.25rem;
+    --bs-dropdown-font-size: 0.875rem;
+    --bs-dropdown-color: #212121;
+    --bs-dropdown-bg: #f6f6f6;
+    --bs-dropdown-border-color: #f6f6f6;
+    --bs-dropdown-border-radius: 0.5rem;
+    --bs-dropdown-border-width: 1px;
+    --bs-dropdown-inner-border-radius: calc(0.5rem - 1px);
+    --bs-dropdown-divider-bg: #e2e5f1;
+    --bs-dropdown-divider-margin-y: 0.375rem;
+    --bs-dropdown-box-shadow: 0 0.275rem 1.25rem rgba(11, 15, 25, 0.05), 0 0.25rem 0.5625rem rgba(11, 15, 25, 0.03);
+    --bs-dropdown-link-color: #212121;
+    --bs-dropdown-link-hover-color: #685BC6;
+    --bs-dropdown-link-hover-bg: #f6f6f6;
+    --bs-dropdown-link-active-color: #685BC6;
+    --bs-dropdown-link-active-bg: #f6f6f6;
+    --bs-dropdown-link-disabled-color: #adb5bd;
+    --bs-dropdown-item-padding-x: 1rem;
+    --bs-dropdown-item-padding-y: 0.25rem;
+    --bs-dropdown-header-color: #6c757d;
+    --bs-dropdown-header-padding-x: 1rem;
+    --bs-dropdown-header-padding-y: 0.5rem;
+}

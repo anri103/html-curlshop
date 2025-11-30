@@ -1,0 +1,123 @@
+@@include('partials/header.html', {
+    "title": "Блог",
+    "bodyClass": "cms-page"
+})
+
+<!-- Main -->
+<main class="main page-main">
+
+    <!-- section-breadcrumb -->
+    <section class="section py-3 pb-4 pb-lg-0">
+        <div class="container">
+            <nav class="d-flex" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Блог</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-content -->
+    <section class="section py-1 pb-5 py-lg-5">
+        <div class="container">
+            <h1 class="h1 fw-400 mb-4 mb-lg-5">Кудрявый блог</h1>
+
+            <!-- Сетка блога -->
+            <div class="grid-blog">
+                <div class="d-grid gap-2 grid-cols-1 grid-cols-md-3 grid-cols-lg-3">
+                    <!-- Item -->
+                    @@include('partials/card-blog.html', {
+                        "cardWide": false,
+                        "link": "blog-single-1.html",
+                        "imgThumbURL": "img/blog/001.png",
+                        "date": "11 мая 2022",
+                        "title": "Защита кудрявых волос летом: как, чем и зачем?"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-blog.html', {
+                        "cardWide": true,
+                        "link": "blog-single-2.html",
+                        "imgThumbURL": "img/blog/002.png",
+                        "date": "11 мая 2022",
+                        "title": "Бессульфатные шампуни. Как подобрать &#34;тот самый&#34;?"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-blog.html', {
+                        "cardWide": false,
+                        "link": "blog-single-1.html",
+                        "imgThumbURL": "img/blog/009.png",
+                        "date": "11 мая 2022",
+                        "title": "10 причин, почему кудри пушатся"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-blog.html', {
+                        "cardWide": false,
+                        "link": "blog-single-2.html",
+                        "imgThumbURL": "img/blog/004.png",
+                        "date": "11 мая 2022",
+                        "title": "Кудри и расчёска: есть ли у них шансы быть вместе?"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-blog.html', {
+                        "cardWide": false,
+                        "link": "blog-single-1.html",
+                        "imgThumbURL": "img/blog/005.png",
+                        "date": "11 мая 2022",
+                        "title": "Плоппинг кудрявых волос: что это и как его делать?"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-blog.html', {
+                        "cardWide": true,
+                        "link": "blog-single-2.html",
+                        "imgThumbURL": "img/blog/006.png",
+                        "date": "11 мая 2022",
+                        "title": "Маски для кудрявых волос. какие лучше – промышленные или домашние?"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-blog.html', {
+                        "cardWide": false,
+                        "link": "blog-single-1.html",
+                        "imgThumbURL": "img/blog/007.png",
+                        "date": "11 мая 2022",
+                        "title": "Почему кудрявым волосам стоит избегать высоких температур?"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-blog.html', {
+                        "cardWide": false,
+                        "link": "blog-single-2.html",
+                        "imgThumbURL": "img/blog/008.png",
+                        "date": "11 мая 2022",
+                        "title": "Всё про волнистые волосы: уход, советы и лайфхаки"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-blog.html', {
+                        "cardWide": false,
+                        "link": "blog-single-1.html",
+                        "imgThumbURL": "img/blog/010.png",
+                        "date": "11 мая 2022",
+                        "title": "3 совета, которые помогут ускорить сушку кудрявых волос"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-blog.html', {
+                        "cardWide": false,
+                        "link": "blog-single-2.html",
+                        "imgThumbURL": "img/blog/003.png",
+                        "date": "11 мая 2022",
+                        "title": "Как из пуха получить оформленные кудри?"
+                    })
+                </div>
+            </div>
+
+            <!-- Если постов 10 или меньше - кнопку не показываем, если больше - показываем -->
+            <div class="text-center mt-4 mt-lg-5">
+                <button type="button" class="btn btn-primary btn-lg text-uppercase w-100 w-lg-auto px-lg-6">показать больше</button>
+            </div>                    
+
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+@@include('partials/footer.html')

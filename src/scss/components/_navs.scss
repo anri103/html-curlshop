@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------
+[ navs ]*/
+
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: #000;
+    --bs-nav-link-hover-color: #ccc;
+    --bs-nav-link-disabled-color: #6c757d;
+}
+
+.nav-link .svg-link>svg:first-child {
+    display: inline-block;
+}
+
+.nav-link .svg-link>svg:last-child {
+    display: none;
+}
+
+.nav-link.active .svg-link>svg:first-child {
+    display: none;
+}
+
+.nav-link.active .svg-link>svg:last-child {
+    display: inline-block;
+}

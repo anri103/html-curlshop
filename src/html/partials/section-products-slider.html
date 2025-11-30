@@ -1,0 +1,97 @@
+<section class="section py-5">
+    <div class="container">
+        <div class="mb-4">
+            <h2 class="h3 fw-400 text-uppercase">С этим товаром так же покупают</h2>
+        </div>
+
+        <div class="swiper similarProductSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- Item -->
+                    @@include('card-product.html', {
+                        "badgeType": null,
+                        "btnWishlistActive": false,
+                        "link": "shop-item-1.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "1190"
+                    })
+                </div>
+                <div class="swiper-slide">
+                    <!-- Item -->
+                    @@include('card-product.html', {
+                        "badgeType": "promo",
+                        "btnWishlistActive": true,
+                        "link": "shop-item-2.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Кондиционер &#34;Упругие локоны&#34;",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "780"
+                    })
+                </div>
+                <div class="swiper-slide">
+                    <!-- Item -->
+                    @@include('card-product.html', {
+                        "badgeType": "outOfStock",
+                        "btnWishlistActive": true,
+                        "link": "shop-item-1.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Укрепляющая крем-маска Кокос и Драгон фрукт",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "820"
+                    })
+                </div>
+                <div class="swiper-slide">
+                    <!-- Item -->
+                    @@include('card-product.html', {
+                        "badgeType": "backInStock",
+                        "btnWishlistActive": false,
+                        "link": "shop-item-2.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Гель сильной фиксации",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "920"
+                    })
+                </div>
+                <div class="swiper-slide">
+                    <!-- Item -->
+                    @@include('card-product.html', {
+                        "badgeType": "preorder",
+                        "btnWishlistActive": false,
+                        "link": "shop-item-1.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "610"
+                    })
+                </div>
+                <div class="swiper-slide">
+                    <!-- Item -->
+                    @@include('card-product.html', {
+                        "badgeType": "new",
+                        "btnWishlistActive": true,
+                        "link": "shop-item-2.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "770"
+                    })
+                </div>
+            </div>
+            <div class="swiper-navigation-container">
+                <div class="swiper-prev">
+                    <svg width="60" height="6" viewBox="0 0 60 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M-3.8147e-06 3L5 5.88675V0.113249L-3.8147e-06 3ZM60 2.5H4.5V3.5H60V2.5Z" fill="#685BC6"/>
+                    </svg>
+                </div>
+                <div class="swiper-next">
+                    <svg width="60" height="6" viewBox="0 0 60 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M60 3.00001L55 0.113253L55 5.88676L60 3.00001ZM-4.37114e-08 3.5L55.5 3.5L55.5 2.5L4.37114e-08 2.5L-4.37114e-08 3.5Z" fill="#685BC6"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,222 @@
+/*------------------------------------------------------------------
+[ typography ]*/
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1, .h1 {
+    font-size: 1.5rem;
+}
+@media (min-width: 1200px) {
+    h1, .h1 {
+        font-size: 2.5rem;
+    }
+}
+  
+h2, .h2 {
+    font-size: 1.5rem;
+}
+@media (min-width: 1200px) {
+    h2, .h2 {
+        font-size: 2.25rem;
+    }
+}
+
+h3, .h3 {
+    font-size: 1.5rem;
+}
+@media (min-width: 1200px) {
+    h3, .h3 {
+        font-size: 1.75rem;
+    }
+}
+
+h4, .h4 {
+    font-size: 1rem;
+}
+@media (min-width: 1200px) {
+    h4, .h4 {
+        font-size: 1.5rem;
+    }
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+}
+@media (min-width: 1200px) {
+    h5, .h5 {
+        font-size: 1.25rem;
+    }
+}
+
+h6, .h6 {
+    font-size: 1rem;
+}
+@media (min-width: 1200px) {
+    h6, .h6 {
+        font-size: 1.125rem;
+    }
+}
+
+.ff-title {
+    font-family: var(--theme-ff-title);
+}
+
+.fw-light,
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-normal,
+.fw-regular,
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-medium,
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-semibold,
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-bold,
+.fw-700 {
+    font-weight: 700;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-34 {
+    font-size: 34px;
+}
+
+.fs-42 {
+    font-size: 42px;
+}
+
+@media (min-width: 992px) {
+    .fs-lg-8 {
+        font-size: 8px;
+    }
+
+    .fs-lg-10 {
+        font-size: 10px;
+    }
+    
+    .fs-lg-12 {
+        font-size: 12px;
+    }
+    
+    .fs-lg-14 {
+        font-size: 14px;
+    }
+    
+    .fs-lg-16 {
+        font-size: 16px;
+    }
+    
+    .fs-lg-18 {
+        font-size: 18px;
+    }
+    
+    .fs-lg-20 {
+        font-size: 20px;
+    }
+    
+    .fs-lg-24 {
+        font-size: 24px;
+    }
+
+    .fs-lg-26 {
+        font-size: 26px;
+    }
+    
+    .fs-lg-28 {
+        font-size: 28px;
+    }
+    
+    .fs-lg-32 {
+        font-size: 32px;
+    }
+    
+    .fs-lg-34 {
+        font-size: 34px;
+    }
+
+    .fs-lg-42 {
+        font-size: 42px;
+    }
+}
+
+.text-gray {
+    color: #A2A2A2;
+}
+
+.text-muted {
+    color: #A2A2A2 !important;
+}
+
+@media (min-width: 992px) {
+    p {
+        margin-bottom: 2rem;
+    }
+
+    ol, ul, dl {
+        margin-bottom: 2rem;
+    }
+}

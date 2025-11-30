@@ -1,0 +1,233 @@
+@@include('partials/header.html', {
+    "title": "Каталог",
+    "bodyClass": "cms-page"
+})
+
+<!-- Main -->
+<main class="main page-main">
+
+    <!-- section-breadcrumb -->
+    <section class="section py-3 pb-4 pb-lg-0">
+        <div class="container">
+            <nav class="d-flex" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-content -->
+    <section class="section py-1 pb-5 py-lg-5">
+        <div class="container">
+            <h1 class="h1 fw-400 mb-4 mb-lg-5">Каталог</h1>
+            <!-- Категории -->
+            <div class="scrollable-container categories-list mb-4">
+                <div class="scrollable-wrapper">
+                    <div class="scrollable-item"><a class="categories-link active" href="#">Все товары</a></div>
+                    <div class="scrollable-item"><a class="categories-link" href="#">Шампуни</a></div>
+                    <div class="scrollable-item"><a class="categories-link" href="#">Кондиционеры</a></div>
+                    <div class="scrollable-item"><a class="categories-link" href="#">Маски</a></div>
+                    <div class="scrollable-item"><a class="categories-link" href="#">Стайлинг</a></div>
+                    <div class="scrollable-item"><a class="categories-link" href="#">Несмываемый уход</a></div>
+                    <div class="scrollable-item"><a class="categories-link" href="#">Аксессуары и мерч</a></div>
+                    <div class="scrollable-item"><a class="categories-link" href="#">Наборы и сертификаты</a></div>
+                </div>
+            </div>
+            <!-- Фильтр -->
+            <div class="shop-filters mb-3">
+                <div class="d-flex justify-content-lg-end">
+                    <select class="form-select border-0 ps-0" style="max-width: 160px;">
+                        <option selected>Сортировать</option>
+                        <option value="1">популярное</option>
+                        <option value="2">новинки</option>
+                        <option value="3">сначала дешевые</option>
+                        <option value="4">сначала дорогие</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Сетка товаров -->
+            <div class="grid-products">
+                <div class="d-grid gap-2 grid-cols-2 grid-cols-md-3 grid-cols-lg-4">
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": null,
+                        "btnWishlistActive": false,
+                        "link": "shop-item-1.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "1190"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": "promo",
+                        "btnWishlistActive": true,
+                        "link": "shop-item-2.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Кондиционер &#34;Упругие локоны&#34;",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "780"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": "outOfStock",
+                        "btnWishlistActive": true,
+                        "link": "shop-item-1.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Укрепляющая крем-маска Кокос и Драгон фрукт",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "820"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": "backInStock",
+                        "btnWishlistActive": false,
+                        "link": "shop-item-2.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Гель сильной фиксации",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "920"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": "preorder",
+                        "btnWishlistActive": false,
+                        "link": "shop-item-1.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "610"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": "new",
+                        "btnWishlistActive": true,
+                        "link": "shop-item-2.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "770"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": null,
+                        "btnWishlistActive": false,
+                        "link": "shop-item-1.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "1190"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": null,
+                        "btnWishlistActive": false,
+                        "link": "shop-item-2.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "1190"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": null,
+                        "btnWishlistActive": false,
+                        "link": "shop-item-1.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "1190"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": "promo",
+                        "btnWishlistActive": true,
+                        "link": "shop-item-2.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Кондиционер &#34;Упругие локоны&#34;",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "780"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": "outOfStock",
+                        "btnWishlistActive": true,
+                        "link": "shop-item-1.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Укрепляющая крем-маска Кокос и Драгон фрукт",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "820"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": "backInStock",
+                        "btnWishlistActive": false,
+                        "link": "shop-item-2.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Гель сильной фиксации",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "920"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": "preorder",
+                        "btnWishlistActive": false,
+                        "link": "shop-item-1.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "610"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": "new",
+                        "btnWishlistActive": true,
+                        "link": "shop-item-2.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "770"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": null,
+                        "btnWishlistActive": false,
+                        "link": "shop-item-1.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "1190"
+                    })
+                    <!-- Item -->
+                    @@include('partials/card-product.html', {
+                        "badgeType": null,
+                        "btnWishlistActive": false,
+                        "link": "shop-item-2.html",
+                        "imgThumbURL": "img/product/prod-01.png",
+                        "title": "Восстанавливающая крем-маска Мята и Лимон",
+                        "description": "Для волнистых и кудрявых волос",
+                        "price": "1190"
+                    })
+                </div>
+            </div>
+
+            <!-- Показать еще -->
+            <div class="text-center mt-4 mt-lg-5">
+                <a class="btn btn-black btn-lg text-uppercase w-100 w-lg-auto px-lg-6" href="#">
+                    Показать больше
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section-subscription -->
+    @@include('partials/section-subscription.html')
+
+</main>
+
+<!-- Footer -->
+@@include('partials/footer.html')

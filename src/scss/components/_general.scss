@@ -1,0 +1,136 @@
+/*------------------------------------------------------------------
+[ general ]*/
+
+html {
+	min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+.main {
+    padding: 0;
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: var(--bs-body-lg-font-size);
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1160px;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.bg-img {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img-top-auto {
+    background-position: 50% 0;
+    background-size: auto;
+}
+
+.z-index-1 {
+    z-index: 1 !important;
+}
+
+.z-index-2 {
+    z-index: 2 !important;
+}
+
+.z-index-3 {
+    z-index: 3 !important;
+}
+
+.z-index-4 {
+    z-index: 4 !important;
+}
+
+.z-index-5 {
+    z-index: 5 !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-auto {
+    width: auto !important;
+}
+
+.text-transform-none {
+    text-transform: none !important;
+}
+
+// grid
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+    .grid-cols-md-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .col-span-md-2 {
+        grid-column: span 2 / span 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-cols-lg-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid-cols-lg-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .px-lg-6 {
+        padding-right: 5rem !important;
+        padding-left: 5rem !important;
+    }
+
+    .w-lg-100 {
+        width: 100% !important;
+    }
+
+    .w-lg-auto {
+        width: auto !important;
+    }
+
+    .box-lg-shadow {
+        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+    }
+}

@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------
+[ variables ]*/
+
+:root {
+    --theme-ff-main: "Stolzl Book", sans-serif;
+    --theme-ff-title: "Stolzl", sans-serif;
+
+    --bs-success: #C6F45C;
+    --bs-info: #2CCCD4;
+    --bs-info-purple: #685BC6;
+    --bs-warning: #FBE121;
+    --bs-danger: #F94239;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+
+    --bs-success-rgb: 198, 244, 92;
+    --bs-info-rgb: 44, 204, 212;
+    --bs-info-purple-rgb: 104, 91, 198;
+    --bs-warning-rgb: 251, 225, 33;
+    --bs-danger-rgb: 249, 66, 57;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+
+    --bs-body-font-family: var(--theme-ff-main), var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-lg-font-size: 1.25rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.4;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #cccccc;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.375rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: #212121;
+    --bs-link-hover-color: #685BC6;
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fff3cd;
+}

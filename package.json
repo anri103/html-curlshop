@@ -1,0 +1,28 @@
+{
+  "name": "html-curlshop",
+  "version": "1.0.0",
+  "description": "Frontend сборка для интернет-магазина Curlshop",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "clean": "gulp clean"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fancyapps/ui": "^6.0.34",
+    "bootstrap": "^5.2.3",
+    "imask": "^7.6.1",
+    "swiper": "^8.4.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-rename": "^2.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.75.0"
+  }
+}

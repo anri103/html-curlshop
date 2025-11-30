@@ -1,0 +1,256 @@
+@@include('partials/header.html', {
+    "title": "ЛК: Уведомления",
+    "bodyClass": "cms-home"
+})
+
+<!-- Main -->
+<main class="main page-main">
+
+    <!-- section-breadcrumb -->
+    <section class="section py-3 pb-4 pb-lg-0">
+        <div class="container">
+            <nav class="d-flex" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Личный кабинет</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-content -->
+    <section class="section py-1 pb-5 py-lg-5">
+        <div class="container">
+            <h1 class="h1 fw-400 mb-4 mb-lg-5">Личный кабинет</h1>
+            <div>
+                <div class="row g-3">
+                    <div class="col-lg-3">
+                        <div class="pe-lg-4">
+                            <div class="scrollable-container lk-menu mb-4">
+                                <div class="scrollable-wrapper">
+                                    <div class="scrollable-item">
+                                        <a class="lk-link" href="lk-bonus.html">Бонусы</a>
+                                    </div>
+                                    <div class="scrollable-item">
+                                        <a class="lk-link" href="lk-user.html">Личные данные</a>
+                                    </div>
+                                    <div class="scrollable-item">
+                                        <a class="lk-link" href="lk-history.html">История заказов</a>
+                                    </div>
+                                    <div class="scrollable-item">
+                                        <a class="lk-link" href="lk-address.html">Адрес доставки</a>
+                                    </div>
+                                    <div class="scrollable-item">
+                                        <a class="lk-link active" href="lk-notification.html">Уведомления</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+
+                        <div class="d-flex flex-column rounded-3 p-3 p-lg-5" style="background-color: #f6f6f6;">
+                            <!-- item -->
+                            <!-- Класс active заменяет иконку уведомления -->
+                            <div class="lk-notification-item active">
+                                <div class="row g-3 align-items-center gap-lg-2">
+                                    <div class="col-auto">
+                                        <input class="form-check-input" type="checkbox">
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="svg-notification">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="19" cy="5" r="3" fill="#F94239"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a class="notification-link" href="lk-notification-single.html">Статус вашего заказа изменён: товары доставлены в пункт выдачи</a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="text-gray fs-14 fs-lg-16">17 апр</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <!-- Класс active заменяет иконку уведомления -->
+                            <div class="lk-notification-item active">
+                                <div class="row g-3 align-items-center gap-lg-2">
+                                    <div class="col-auto">
+                                        <input class="form-check-input" type="checkbox">
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="svg-notification">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="19" cy="5" r="3" fill="#F94239"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a class="notification-link" href="lk-notification-single.html">Поздравляем! У вас повысилась категория кэшбека</a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="text-gray fs-14 fs-lg-16">17 апр</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <!-- Класс active заменяет иконку уведомления -->
+                            <div class="lk-notification-item active">
+                                <div class="row g-3 align-items-center gap-lg-2">
+                                    <div class="col-auto">
+                                        <input class="form-check-input" type="checkbox">
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="svg-notification">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="19" cy="5" r="3" fill="#F94239"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a class="notification-link" href="lk-notification-single.html">У вас есть персональная скидка 10% за регистрацию</a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="text-gray fs-14 fs-lg-16">17 апр</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="lk-notification-item">
+                                <div class="row g-3 align-items-center gap-lg-2">
+                                    <div class="col-auto">
+                                        <input class="form-check-input" type="checkbox">
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="svg-notification">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="19" cy="5" r="3" fill="#F94239"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a class="notification-link" href="lk-notification-single.html">Товары из избранного снова в наличии</a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="text-gray fs-14 fs-lg-16">17 апр</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="lk-notification-item">
+                                <div class="row g-3 align-items-center gap-lg-2">
+                                    <div class="col-auto">
+                                        <input class="form-check-input" type="checkbox">
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="svg-notification">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="19" cy="5" r="3" fill="#F94239"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a class="notification-link" href="lk-notification-single.html">Ваш заказ оформлен</a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="text-gray fs-14 fs-lg-16">17 апр</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="lk-notification-item">
+                                <div class="row g-3 align-items-center gap-lg-2">
+                                    <div class="col-auto">
+                                        <input class="form-check-input" type="checkbox">
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="svg-notification">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.134 11C18.715 16.375 21 18 21 18H3C3 18 6 15.867 6 8.4C6 6.703 6.632 5.075 7.757 3.875C8.883 2.675 10.41 2 12 2C12.337 2 12.672 2.03 13 2.09M13.73 21C13.5544 21.3033 13.3021 21.5552 12.9985 21.7302C12.6948 21.9053 12.3505 21.9974 12 21.9974C11.6495 21.9974 11.3052 21.9053 11.0015 21.7302C10.6979 21.5552 10.4456 21.3033 10.27 21M19 8C19.7956 8 20.5587 7.68393 21.1213 7.12132C21.6839 6.55871 22 5.79565 22 5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2C18.2044 2 17.4413 2.31607 16.8787 2.87868C16.3161 3.44129 16 4.20435 16 5C16 5.79565 16.3161 6.55871 16.8787 7.12132C17.4413 7.68393 18.2044 8 19 8Z" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="19" cy="5" r="3" fill="#F94239"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a class="notification-link" href="lk-notification-single.html">Ваш заказ оплачен</a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="text-gray fs-14 fs-lg-16">17 апр</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="mt-4 px-3 px-lg-5">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-lg-4">
+                                    <div class="d-flex gap-4 align-items-center justify-content-center justify-content-lg-start">
+                                        <button type="button" class="btn btn-text text-transform-none fs-14 fs-lg-16 p-0">
+                                            <span>Удалить</span>
+                                            <svg class="ms-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask0_2237_6289" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                                <path d="M0 5.91278e-05H19.9999V20H0V5.91278e-05Z" fill="white"/>
+                                                </mask>
+                                                <g mask="url(#mask0_2237_6289)">
+                                                <path d="M13.2163 17.1116C13.5399 17.1116 13.8022 16.8487 13.8022 16.5244V9.39798C13.8022 9.07369 13.5399 8.81076 13.2163 8.81076C12.8927 8.81076 12.6304 9.07369 12.6304 9.39798V16.5244C12.6304 16.8487 12.8927 17.1116 13.2163 17.1116Z" fill="#685BC6"/>
+                                                <path d="M10 17.1116C10.3236 17.1116 10.5859 16.8487 10.5859 16.5244V9.39798C10.5859 9.07369 10.3236 8.81076 10 8.81076C9.67641 8.81076 9.41406 9.07369 9.41406 9.39798V16.5244C9.41406 16.8487 9.67641 17.1116 10 17.1116Z" fill="#685BC6"/>
+                                                <path d="M6.78369 17.1116C7.10728 17.1116 7.36963 16.8487 7.36963 16.5244V9.39798C7.36963 9.07369 7.10728 8.81076 6.78369 8.81076C6.4601 8.81076 6.19775 9.07369 6.19775 9.39798V16.5244C6.19775 16.8487 6.4601 17.1116 6.78369 17.1116Z" fill="#685BC6"/>
+                                                <path d="M15.477 17.0571C15.3112 18.3462 14.8127 18.8256 13.6382 18.8256H6.20874C5.61042 18.8256 5.19585 18.6847 4.94136 18.3947C4.7178 18.14 4.57788 17.7437 4.5012 17.1478L3.34015 7.18869H16.6578L15.477 17.0571ZM2.54882 5.7678C2.54882 4.71593 3.37597 3.86011 4.39265 3.86011H15.6074C16.6241 3.86011 17.4512 4.71593 17.4512 5.7678V6.01424H2.54882V5.7678ZM7.26932 1.17457H12.5149C12.9388 1.17457 13.0867 1.55305 13.1577 1.73492C13.256 1.98644 13.323 2.30933 13.3565 2.68566H6.43245C6.49311 2.05156 6.68307 1.17852 7.26932 1.17457ZM15.6074 2.68566H14.5323C14.4932 2.15164 14.3984 1.68937 14.2489 1.30676C13.9198 0.46418 13.304 0.000120163 12.5149 0.000120163H7.26541C6.11495 0.00777626 5.38487 0.999844 5.25425 2.68566H4.39265C2.7298 2.68566 1.37695 4.06831 1.37695 5.7678V6.60147C1.37695 6.9258 1.6393 7.18869 1.96289 7.18869H2.16031L3.33761 17.2874L3.33843 17.294C3.4462 18.135 3.67597 18.7312 4.06152 19.1705C4.54468 19.7209 5.2671 20.0001 6.20874 20.0001H13.6382C14.6105 20.0001 15.3611 19.7141 15.869 19.1503C16.2836 18.69 16.5284 18.0717 16.6396 17.2044L16.6402 17.1995L17.8381 7.18869H18.0371C18.3607 7.18869 18.6231 6.9258 18.6231 6.60147V5.7678C18.6231 4.06831 17.2702 2.68566 15.6074 2.68566Z" fill="#685BC6"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn btn-text text-transform-none fs-14 fs-lg-16 p-0">Выбрать все</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <button type="button" class="btn p-3">
+                                            <svg width="41" height="6" viewBox="0 0 41 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 3L5 0.113249V5.88675L0 3ZM41 3.5H4.5V2.5H41V3.5Z" fill="#685BC6"/>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn p-3">
+                                            <svg width="41" height="6" viewBox="0 0 41 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M41 3L36 0.113249V5.88675L41 3ZM0 3.5H36.5V2.5H0V3.5Z" fill="#685BC6"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+@@include('partials/footer.html')

@@ -1,0 +1,267 @@
+@@include('partials/header.html', {
+    "title": "Оформление",
+    "bodyClass": "cms-page"
+})
+
+<!-- Main -->
+<main class="main page-main">
+
+    <!-- section-breadcrumb -->
+    <section class="section py-3 pb-4 pb-lg-0">
+        <div class="container">
+            <nav class="d-flex" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="cart.html">Корзина</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Оформление</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-content -->
+    <section class="section py-1 pb-5 py-lg-5">
+        <div class="container">
+            <h1 class="h1 fw-400 mb-4 mb-lg-5">Оформление</h1>
+            <form class="checkout-form" action="#">
+                <div class="row g-3">
+                    <div class="col-lg-7">
+
+                        <div class="pb-3 mb-3">
+                            <p class="h4 ff-title fw-500 mb-4">Доставка</p>
+                            <div class="form-group mb-3">
+                                <label class="form-label fs-14 fs-lg-16">Страна</label>
+                                <select class="form-select fs-18 fs-lg-18">
+                                    <option value="1">Россия</option>
+                                    <option value="2">Австралия</option>
+                                    <option value="3">Бангладеш</option>
+                                    <option value="4">Босния и Герцеговина</option>
+                                    <option value="5">Маршалловы Острова</option>
+                                    <option value="6">Папуа — Новая Гвинея</option>
+                                    <option value="7">Сент-Винсент и Гренадины</option>
+                                    <option value="8">Соединённые Штаты Америки</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label fs-14 fs-lg-16">Населенный пункт</label>
+                                <input class="form-control fs-18 fs-lg-18" type="text" placeholder="г Королёв, Московская обл.">
+                            </div>
+                        
+                            <!-- Комментарий от заказчика: -->
+                            <!-- если клиент выбирает доставку курьером сдек или боксберри, то поля индекс, улица, дом, квартира убираются -->
+                            <div class="form-group mb-3">
+                                <!-- Навигация табы -->
+                                <div role="tablist">
+                                    <div class="row g-3 row-cols-1 row-cols-md-1 row-cols-lg-1">
+                                        <div class="col" role="presentation">
+                                            <button type="button" class="tab-delivery rounded-3" id="delivery01-tab" data-bs-toggle="pill" data-bs-target="#delivery01" role="tab" aria-controls="delivery01" aria-selected="false">
+                                                <img class="img-fluid" src="img/checkout/tab-delivery-01.png" alt="">
+                                                <div class="ff-title fs-18 fs-lg-18">Пункт выдачи</div>
+                                                <div class="text-gray fs-14 fs-lg-16">Службы: CDEK, BoxBerry, Почта России</div>
+                                            </button>
+                                        </div>
+                                        <div class="col" role="presentation">
+                                            <button type="button" class="tab-delivery rounded-3" id="delivery02-tab" data-bs-toggle="pill" data-bs-target="#delivery02" role="tab" aria-controls="delivery02" aria-selected="false">
+                                                <img class="img-fluid" src="img/checkout/tab-delivery-02.png" alt="">
+                                                <div class="ff-title fs-18 fs-lg-18">Курьером BoxBerry</div>
+                                                <div class="text-gray fs-14 fs-lg-16">Доставка осуществляется от 3 до 7 дней</div>
+                                            </button>
+                                        </div>
+                                        <div class="col" role="presentation">
+                                            <button type="button" class="tab-delivery rounded-3" id="delivery03-tab" data-bs-toggle="pill" data-bs-target="#delivery03" role="tab" aria-controls="delivery03" aria-selected="false">
+                                                <img class="img-fluid" src="img/checkout/tab-delivery-03.png" alt="">
+                                                <div class="ff-title fs-18 fs-lg-18">Курьером СДЭК</div>
+                                                <div class="text-gray fs-14 fs-lg-16">Доставка осуществляется от 3 до 7 дней</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <!-- Контент табы -->
+                                <div class="tab-content">
+
+                                    <!-- tab 01 -->
+                                    <div class="tab-pane fade" id="delivery01" role="tabpanel" aria-labelledby="delivery01-tab" tabindex="0">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label fs-14 fs-lg-16">Комментарии к заказу</label>
+                                            <textarea class="form-control" rows="4"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab 02 -->
+                                    <div class="tab-pane fade" id="delivery02" role="tabpanel" aria-labelledby="delivery02-tab" tabindex="0">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label fs-14 fs-lg-16">Почтовый индекс</label>
+                                            <input class="form-control fs-18 fs-lg-18" type="text">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label class="form-label fs-14 fs-lg-16">Улица</label>
+                                            <input class="form-control fs-18 fs-lg-18" type="text">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label class="form-label fs-14 fs-lg-16">Дом</label>
+                                                    <input class="form-control fs-18 fs-lg-18" type="text">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="form-label fs-14 fs-lg-16">Квартира</label>
+                                                    <input class="form-control fs-18 fs-lg-18" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label class="form-label fs-14 fs-lg-16">Комментарии к заказу</label>
+                                            <textarea class="form-control" rows="4"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab 03 -->
+                                    <div class="tab-pane fade" id="delivery03" role="tabpanel" aria-labelledby="delivery03-tab" tabindex="0">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label fs-14 fs-lg-16">Почтовый индекс</label>
+                                            <input class="form-control fs-18 fs-lg-18" type="text">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label class="form-label fs-14 fs-lg-16">Улица</label>
+                                            <input class="form-control fs-18 fs-lg-18" type="text">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label class="form-label fs-14 fs-lg-16">Дом</label>
+                                                    <input class="form-control fs-18 fs-lg-18" type="text">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="form-label fs-14 fs-lg-16">Квартира</label>
+                                                    <input class="form-control fs-18 fs-lg-18" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label class="form-label fs-14 fs-lg-16">Комментарии к заказу</label>
+                                            <textarea class="form-control" rows="4"></textarea>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="pb-3 mb-3">
+                            <p class="h4 ff-title fw-500 mb-4">Информация о покупателе</p>
+                            <div class="form-group mb-3">
+                                <label class="form-label fs-14 fs-lg-14 d-none">Ваше ФИО</label>
+                                <input class="form-control fs-18 fs-lg-18" type="text" placeholder="Ваше ФИО">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label fs-14 fs-lg-14 d-none">Контактный телефон</label>
+                                <input class="form-control fs-18 fs-lg-18" type="text" placeholder="Контактный телефон">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label fs-14 fs-lg-14 d-none">Email</label>
+                                <input class="form-control fs-18 fs-lg-18" type="text" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="pb-3 mb-3">
+                            <p class="h4 ff-title fw-500 mb-4">Способ оплаты</p>
+                            <div class="form-group mb-3">
+                                <div class="row g-2 row-cols-3 row-cols-md-3 row-cols-lg-3">
+                                    <div class="col">
+                                        <label class="payment-item" for="basic1">
+                                            <input type="radio" name="plan" id="basic1" checked="">
+                                            <div class="payment-body rounded-3">
+                                                <img src="img/checkout/payment-01.png" alt="Сбербанк">
+                                                <div class="ff-title fs-14 fs-lg-18"><span class="d-block">Сбербанк</span> Онлайн</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col">
+                                        <label class="payment-item" for="basic2">
+                                            <input type="radio" name="plan" id="basic2">
+                                            <div class="payment-body rounded-3">
+                                                <img src="img/checkout/payment-02.png" alt="ЮMoney">
+                                                <div class="ff-title fs-14 fs-lg-18"><span class="d-block">Картой через</span> ЮMoney</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col">
+                                        <label class="payment-item" for="basic3">
+                                            <input type="radio" name="plan" id="basic3">
+                                            <div class="payment-body rounded-3">
+                                                <img src="img/checkout/payment-02.png" alt="ЮMoney">
+                                                <div class="ff-title fs-14 fs-lg-18"><span class="d-block">Из кошелька</span> ЮMoney</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="ps-lg-4">
+                            <div class="box-lg-shadow bg-white rounded-3 p-lg-4">
+
+                                <!-- Комментарий от заказчика: -->
+                                <!-- если у клиента нет персональной скидки и он не списывает баллы, то эти строки убираются, остаются только пункты "сумма по товарам" и "стоимость доставки" -->
+                                <div class="cart-summary mb-4">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="fs-16 fs-lg-16">Сумма по товарам</span>
+                                        <span class="fs-16 fs-lg-16">20 970 ₽</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="fs-16 fs-lg-16">Списанные баллы</span>
+                                        <span class="fs-16 fs-lg-16">350 ₽</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="fs-16 fs-lg-16">Стоимость доставки</span>
+                                        <span class="fs-16 fs-lg-16">0 ₽</span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between my-3">
+                                    <span class="ff-title fw-500 fs-22 fs-lg-22 text-black text-uppercase">Итого</span>
+                                    <span class="fs-22 fs-lg-22 text-black">20 970 ₽</span>
+                                </div>
+
+
+                                <!-- Комментарий от заказчика: -->
+                                <!-- если балла не списываюттся, то этой строчки со списанными баллами под ИТОГО - нет -->
+                                <div class="mb-4">
+                                    <div class="form-group mb-3">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span class="ff-title text-uppercase fs-14 fs-lg-18">У вас 350 баллов</span>
+                                            <a class="ff-title purple-link text-uppercase text-decoration-none fs-14 fs-lg-18" href="#">Потратить баллы</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg text-uppercase w-100">Перейти к оплате</button>
+
+                                <div class="mt-4">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkout-agree1" checked="">
+                                        <label class="form-check-label fs-14" for="checkout-agree1">
+                                            Даю согласие на обработку персональных данных
+                                        </label>
+                                        <div class="text-gray fs-12">Настоящим подтверждаю, что я ознакомлен/а и согласен/а с условиями <a href="#">оферты и политики конфиденциальности</a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+@@include('partials/footer.html')

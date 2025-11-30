@@ -1,0 +1,73 @@
+<article class="card card-product">
+    @@if (badgeType === 'promo') {
+    <span class="badge fs-10 fs-lg-14 bg-danger">Акция 2 по цене 1</span>
+    }
+    @@if (badgeType === 'outOfStock') {
+    <span class="badge fs-10 fs-lg-14 bg-success">Нет в наличии</span>
+    }
+    @@if (badgeType === 'backInStock') {
+    <span class="badge fs-10 fs-lg-14 bg-info-purple">Снова в наличии</span>
+    }
+    @@if (badgeType === 'preorder') {
+    <span class="badge fs-10 fs-lg-14 bg-info">Предзаказ</span>
+    }
+    @@if (badgeType === 'new') {
+    <span class="badge fs-10 fs-lg-14 bg-warning">Новинка</span>
+    }
+    <!-- Add "active" to button fill svg icon -->
+    @@if (btnWishlistActive) {
+    <button type="button"
+        class="btn btn-icon btn-wishlist active"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        data-bs-title="Уже в избранном">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
+                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+    }
+    @@if (!btnWishlistActive) {
+    <button type="button"
+        class="btn btn-icon btn-wishlist"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        data-bs-title="Добавить в избранное">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+            <path class="svg-figure" fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.75991 9.87696C0.688896 6.59951 1.94057 2.85343 5.45106 1.74496C7.29764 1.16089 9.33586 1.50527 10.871 2.63721C12.3233 1.53658 14.4364 1.16481 16.281 1.74496C19.7915 2.85343 21.0511 6.59951 19.9811 9.87696C18.3142 15.072 10.871 19.0734 10.871 19.0734C10.871 19.0734 3.48271 15.1326 1.75991 9.87696Z"
+                stroke="#212121" stroke-width="1.1244" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+    }
+    <a href="@@link" class="hover-opacity">
+        <img class="card-img" src="@@imgThumbURL" alt="...">
+    </a>
+    <div class="card-body px-0">
+        <p class="card-title ff-title fs-12 fs-lg-18 fw-700">
+            <a href="@@link">@@title</a>
+        </p>
+        <p class="product-meta fs-10 fs-lg-14 mb-0">@@description</p>
+    </div>
+    <div class="card-footer px-0">
+        <div class="d-flex align-items-center justify-content-between">
+            <span class="card-price fs-12 fs-lg-14">@@price ₽</span>
+            <div class="card-action-add">
+                <button type="button" class="btn-add-to-cart btn btn-primary fs-12 fs-lg-14">Купить</button>
+                <div class="quantity-container">
+                    <div class="quantity-buttons">
+                        <button type="button" class="minus-button fs-12 fs-lg-14"></button>
+                        <div class="quantity-input-container">
+                            <input type="number" class="quantity-input fs-12 fs-lg-14" value="1" readonly>
+                            <div class="fs-12 fs-lg-14 px-lg-1">шт</div>
+                        </div>
+                        <button type="button" class="plus-button fs-12 fs-lg-14"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
